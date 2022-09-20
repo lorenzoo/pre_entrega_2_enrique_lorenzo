@@ -7,20 +7,33 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"> 
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!--enlace bootstrap-->
+
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+  </head>
   
   <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
   <div class="container__grid">
+    
+    <!--header-->
+
     <header>
+      <!--bloque logo y texto con menu navegador principal-->
       <div class="bloqueMenu">
         <div class="title">
-          <img src="../media/icons8-house-64.png" alt="logo casa">
-          <h1><a class="titulo__logo" href="../index.html">WELCOME<br>TO MY WORLD</h1></a>
+          <img class="logo__casa"  src="../media/icons8-house-64.png" alt="logo casa">
+          <!--aqui hemos cambiado el texto de bootstrap a negrita-->
+          <h1 class="fw-bold"><a class="titulo__logo" href="../index.html">WELCOME<br>TO MY WORLD</h1></a>
         </div>
         <nav class="">
           <ul>
+            <!--enlaces menu navegador-->
+
             <il class="mainTextMen"><a  href="../index.html">INICIO</a></il>
             <il class="mainTextMen"><a  href="./explora.html">EXPLORA</a></il>
             <il class="mainTextMen"><a  href="./comunidad.html">COMUNIDAD</a></il>
@@ -30,26 +43,91 @@
         </nav>
       </div>
     </header>
-     
+
+     <!--aqui empieza el main-->
+
     <main class="novedades">
-        <h2 class="titulos_paginas">SERVICIOS</h2>
+      <!--aqui hemos cambiado el texto de bootstrap a negritaañadiendo la clase fw-bold-->
+
+        <h2 class="titulos_paginas fw-bold">SERVICIOS</h2>
         <div class="main__contacto">
           <div class="container__nosotros">
+
+            <!--esta imagen tiene un pequeño zoom de hover en la clase imagen__nosotros, tambien tienen de retroceso una transition: 0.5s ease-in-out en la clase imagen__nosotros para que sea mas suave-->
+
              <img class="imagen__nosotros" src="../media/chabola.jpg" alt="chabola madera" width="" height="">
           </div>
-          <div class="overlay__nosotros">
-
-
-          </div>
-          <section class="">
+          
+          <section class="texto__servicios">
            <p class="loft servicios">Nos dedicamos a la compra, venta, alquiler y reformas de inmubles, tanto da si estan en ruinas o si ya son palacios dignos de reyes y reinas. Con mas experiencia que el hombre del paleolitico viviendo en cuevas, nuestra meta es trabajar menos que el sastre de tarzan para poder cumplir con tus expectativas y que asi puedas empezar a gozar y vivir en esa casa tan deseada. Solo contactanos y cuentanos que es lo que deseas.</p>
           </section>
         </div>
-    </main>
+      
+        <hr><br>
+        <!--aqui hemos cambiado el texto de bootstrap a negrita-->
+        <h3 class="cabecera__equipo fw-bold">CONOCE A NUESTRO EQUIPO</h3>
 
+        <!--bootstarp elementos para la entrega y evaluacion-->
+
+        <!--estas son unas targetas de bootstrap modificadas para la preentrega2-->
+        <div class="row row-cols-1 row-cols-md-5 g-3">
+          <div class="col">
+            <div class="card">
+              <img src="../media/marta.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Marta Vienes</h5>
+                <h6 class="card-text fs-6">Nuestra encargada de la logistica, ubicacion de inmuebles, casas antiguas o abandonadas.</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="../media/james_chow.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">James Chow</h5>
+                <h6 class="card-text fs-6">No le he visto ni un solo dia des de que empece a trabajar aqui, no se quien es pero si se que tiene su propio despacho.</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="../media/josef.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Casi Miro</h5>
+                <h6 class="card-text fs-6">El administrador de todas nuestras fincas y propiedades, nadie sabe mas que el aunque siempre lo niegue.</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="../media/jefa.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Remedios Alvarez</h5>
+                <h6 class="card-text fs-6">La jefa de las jefas y jefes, la ama del latigo, aqui sino se trajada ella se encarga de que no quede procastinador.</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="../media/dory.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Dory Explory</h5>
+                <h6 class="card-text fs-6">Nuestra decoradora, recien salida de la universidad, cobrando un sueldo de broma por no decir de risa.</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+     
+      </div>
+      <br>
+    </main>
+<!--aqui empieza el footer-->
     <footer>
       <div class="bloqueMenu">
-        <h2 class="title">WELCOME<br>TO MY WORLD</h2>
+        <!--aqui hemos cambiado el texto de bootstrap a negrita-->
+        <h2 class="title fw-bold">WELCOME<br>TO MY WORLD</h2>
+        <!--enlaces footer navegador lateral-->
+
         <nav class="">
           <ul>
             <il class="mainTextMen footerLink"><a  href="../index.html">INICIO</a></il>
@@ -61,7 +139,10 @@
         </nav>
       </div>
     </footer>
-  </div>
+ 
+  <!--script js_bootstrap-->
+  <script src="../java/bootstrap.bundle.min.js"></script>
+</div>
 
 </body>
 

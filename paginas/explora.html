@@ -7,17 +7,28 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"> 
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!--enlace bootstrap-->
+
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
   
   <link rel="stylesheet" href="../css/style.css">
 
 </head>
 
 <body>
+  <div class="container__grid">
   <header>
     <div class="bloqueMenu">
       <div class="title">
-        <img src="../media/icons8-house-64.png" alt="logo casa">
-        <h1><a class="titulo__logo" href="../index.html">WELCOME<br>TO MY WORLD</h1></a>
+
+         <!--en la clase logo__casa le doy la animacion al icono de la casa,esta animacion se la he dado en todas las paginas-->
+
+        <img class="logo__casa"  src="../media/icons8-house-64.png" alt="logo casa">
+
+        <!--aqui hemos cambiado el texto de bootstrap a negrita fw-bold-->
+
+        <h1 class="fw-bold"><a class="titulo__logo" href="../index.html">WELCOME<br>TO MY WORLD</h1></a>
       </div>
       <nav class="">
         <ul class="mainText">
@@ -32,42 +43,48 @@
    </header>
     
     <main class="novedades">
-      <h2 class="titulos_paginas">EXPLORA</h2>
+
+      <!--aqui hemos cambiado el texto de bootstrap a negrita con fw-bold-->
+
+      <h2 class="titulos_paginas fw-bold">EXPLORA</h2>
       <div class="">
         <div class=" casasVerano">
-          <p>Precioso chalet a 4 vientos</p>
+
+          <!--aqui hemos hecho el texto de bootstrap mas grande en todas las imagenes añadiendo un fs-6, tambien tienen todas una pequeña animacion hover en la clase imagenes__casas y de retroceso transition: 0.3s ease-in-out en la clase imagenes__casas para que sea mas suave-->
+
+          <p class="fs-6">Precioso chalet a 4 vientos</p>
           <img class="imagenes__casas" src="../media/pexels-max-vakhtbovych-7587879.jpg" alt="" width="450px" height="275px">
          </div>
         <div class=" casasVerano">
-          <p>Nueva obra con vistas al mar</p>
+          <p class="fs-6">Nueva obra con vistas al mar</p>
           <img class="imagenes__casas" src="../media/pexels-expect-best-323775.jpg" alt="" width="450px" height="275px">
         </div> 
         <div class=" casasVerano">
-          <p>Apartamento totalmente renovado</p>
+          <p class="fs-6">Apartamento totalmente renovado</p>
           <img class="imagenes__casas" src="../media/pexels-max-vakhtbovych-7587827.jpg" alt="" width="450px" height="275px">
         </div>
         <div class="casasVerano">
-          <p>Fantastica casa con un amplio jardin</p>
+          <p class="fs-6">Fantastica casa con un amplio jardin</p>
           <img class="imagenes__casas" src="../media/pexels-terry-magallanes-2635038.jpg" alt="" width="450px" height="275px">
         </div>
         <div class=" casasVerano">
-          <p>Bonita casa, ideal parejas</p>
+          <p class="fs-6">Bonita casa, ideal parejas</p>
           <img class="imagenes__casas" src="../media/pexels-saviesa-home-2089698.jpg" alt="" width="450px" height="275px">
         </div>
         <div class=" casasVerano">
-          <p>Espectacular apartamento delante del mar</p>
+          <p class="fs-6">Espectacular apartamento delante del mar</p>
           <img class="imagenes__casas" src="../media/pexels-pixabay-276724.jpg" alt="" width="450px" height="275px">
         </div>
         <div class=" casasVerano">
-          <p>Insuperable con piscina natural marina</p>
+          <p class="fs-6">Insuperable con piscina natural marina</p>
           <img class="imagenes__casas" src="../media/pexels-asad-photo-maldives-1268871.jpg" alt="" width="450px" height="275px">
         </div>
         <div class=" casasVerano">
-          <p>Bonito apartamento de dos habitaciones</p>
+          <p class="fs-6">Bonito apartamento de dos habitaciones</p>
           <img class="imagenes__casas" src="../media/imagen_contacto.jpg" alt="" width="450px" height="275px">
         </div>
         <div class=" casasVerano">
-          <p>Amplio lof totalmente amueblado</p>
+          <p class="fs-6">Amplio lof totalmente amueblado</p>
           <img class="imagenes__casas" src="../media/loft.jpg" alt="" width="450px" height="275px">
          </div>
       </div>
@@ -88,7 +105,10 @@
 
   <footer>
     <div class="bloqueMenu">
-      <h2 class="title">WELCOME<br>TO MY WORLD</h2>
+
+      <!--aqui hemos cambiado el texto de bootstrap a negrita con fw-bold-->
+
+      <h2 class="title fw-bold">WELCOME<br>TO MY WORLD</h2>
       <nav class="">
         <ul>
             <il class="mainTextMen footerLink"><a  href="../index.html">INICIO</a></il>
@@ -100,7 +120,11 @@
       </nav>
     </div>
   </footer>
+  </div>
 
+ <!--script js_bootstrap-->
+ <script src="../java/bootstrap.bundle.min.js"></script>
+</div>
 </body>
 
 </html>

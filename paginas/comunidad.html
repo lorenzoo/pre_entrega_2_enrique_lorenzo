@@ -7,17 +7,25 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"> 
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!--enlace bootstrap-->
+
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
   
   <link rel="stylesheet" href="../css/style.css">
 
 </head>
 
 <body>
+  <div class="grid__container">
   <header>
     <div class="bloqueMenu">
       <div class="title">
-        <img src="../media/icons8-house-64.png" alt="logo casa">
-        <h1><a class="titulo__logo" href="../index.html">WELCOME<br>TO MY WORLD</h1></a>
+        <img class="logo__casa"  src="../media/icons8-house-64.png" alt="logo casa">
+
+        <!--aqui hemos cambiado el texto de bootstrap a negrita con la clase fw-bold-->
+
+        <h1 class="fw-bold"><a class="titulo__logo" href="../index.html">WELCOME<br>TO MY WORLD</h1></a>
       </div>
       <nav class="">
         <ul>
@@ -34,22 +42,43 @@
     <main class="novedades">
       <section>
         <div>
-          <div class="">
-            <h2 class="titulos_paginas">COMO DARLE VIDA A TU HOGAR CON PLANTAS</h2>
-            <div class="imagenPlantas1 plantas">
-              <img src="../media/plantas.jpg" alt="" width="100%">
-            </div>
-            <div class="imagenPlantas2 plantas">
-             <img src="../media/plantas_1.jpg"  alt="" width="100%">
+          <div class="bloque__comunidad">
+
+            <!--aqui hemos cambiado el texto de bootstrap a negrita con la clase fw-bold-->
+
+            <h2 class="titulos_paginas fw-bold">COMO DARLE VIDA A TU HOGAR CON PLANTAS</h2>
+            <div class="bloque__plantas__plantas">
+              <div class="bloque__plantas__texto">
+                <div class="texto__plantas">
+                  <p class="loft">Es muy probable que hasta que no lo pruebes no te des cuenta, pero convivir con plantas dentro de casa, nos puede hacer sentir la diferencia entre estar en una casa o estar en un hogar. Hay muchisimas maneras de incorporar plantas, flores y macetas en la decoracion, incluso en los lugares donde aparentemente no parecen tener cabida -porque no haya luz o porque no parezca un lugar tipico donde normalmente se colocaria una maceta-. El verde ayuda a crear un ambiente optimista y saludable, asi que hoy queremos darte algunas ideas acerca de como decorar con plantas. Pon a prueba todas las que puedas, y convierte tu casa en un vergel lleno de alegria</p>
+                </div>
+                <img src="../media/plantas.jpg" alt="" width="100%">
+              </div>
+              <div class="imagenPlantas2 plantas">
+                <img src="../media/plantas_1.jpg"  alt="" width="100%">
+              </div>
             </div>
             <div>
-            <div class="textoPlantas">
-              <p class="loft">Es muy probable que hasta que no lo pruebes no te des cuenta, pero convivir con plantas dentro de casa, nos puede hacer sentir la diferencia entre estar en una casa o estar en un hogar. Hay muchisimas maneras de incorporar plantas, flores y macetas en la decoracion, incluso en los lugares donde aparentemente no parecen tener cabida -porque no haya luz o porque no parezca un lugar tipico donde normalmente se colocaria una maceta-. El verde ayuda a crear un ambiente optimista y saludable, asi que hoy queremos darte algunas ideas acerca de como decorar con plantas. Pon a prueba todas las que puedas, y convierte tu casa en un vergel lleno de alegria</p>
-            </div>
+          
             </div>
           </div>
         </div>
+      </section>
+      <br>
+      <hr>
 
+      <section class="media__loft">
+        <h2 class="titulos_paginas fw-bold">VENTAJAS DE ALQUILAR UN LOFT</h2>
+        
+          <div class="contenedor__ventajas__loft">
+            
+              <img class="imagen__loft" src="../media/loft.jpg" alt="apartamento loft" width="100%"> 
+            
+          
+             <p class="loft posicionTextoLoft">Para empezar contamos con un solo ambiente, un loft es una vivienda amplia    consistente en espacios abiertos, sin apenas muros o puertas y con muy pocas divisiones del    espacio. El origen de vivienda se encuentra en Nueva York, en la segunda mitad del siglo XX, cuando algunas personas, especialmente artistas, decidieron aprovechar como viviendas locales abandonados por industrias en declive. Por eso, se trata de grandes naves, con altura significativa y grandes ventanales que aprovechan al maximo la luz natural.</p>
+            
+          </div>
+        
       </section>
       
 
@@ -69,7 +98,9 @@
 
   <footer>
     <div class="bloqueMenu">
-      <h2 class="title">WELCOME<br>TO MY WORLD</h2>
+      <!--aqui hemos cambiado el texto de bootstrap a negrita con la clase fw-bold-->
+
+      <h2 class="title title__footer fw-bold">WELCOME<br>TO MY WORLD</h2>
       <nav class="">
         <ul>
             <il class="mainTextMen footerLink"><a  href="../index.html">INICIO</a></il>
@@ -84,6 +115,10 @@
       
     </div>
   </footer>
+
+  <!--script js_bootstrap-->
+ <script src="../java/bootstrap.bundle.min.js"></script>
+  </div>
 
 </body>
 

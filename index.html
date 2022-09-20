@@ -7,16 +7,28 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"> 
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!--enlace bootstrap-->
+
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+
   <link rel="stylesheet" href="./css/style.css">
   <link rel="shortcut icon" href="favicon.ico">
 </head>
 
 <body>
+  <div class="grid__container">
   <header>
     <div class="bloqueMenu">
         <div class="title">
-          <img src="./media/icons8-house-64.png" alt="logo casa">
-          <h1><a class="titulo__logo" href="#">WELCOME<br>TO MY WORLD</h1></a>
+
+          <!--en la clase logo__casa le doy la animacion al icono de la casa,esta animacion se la he dado en todas las paginas-->
+
+          <img class="logo__casa" src="./media/icons8-house-64.png" alt="logo casa">
+
+          <!--aqui hemos cambiado el texto de bootstrap a negrita-->
+
+          <h1 class="fw-bold"><a class="titulo__logo" href="#">WELCOME<br>TO MY WORLD</h1></a>
         </div>
         <nav>
           <ul>
@@ -25,62 +37,73 @@
             <il class="mainTextMen"><a href="./paginas/comunidad.html">COMUNIDAD</a></il>
             <il class="mainTextMen"><a href="./paginas/nosotros.html">NOSOTROS</a></il>
             <il class="mainTextMen"><a href="./paginas/contacto.html">CONTACTO</a></il>
+            
           </ul>
         </nav>
     </div>
   </header>
     
-    <main class="novedades">
-      <h2 class="titulos_paginas">NOVEDADES DE VERANO<h2>
+    <main>
+      <div class="novedades">
+
+      <!--aqui hemos cambiado el texto de bootstrap a negrita con un fw-bold-->
+
+
+      <h2 class="titulos_paginas fw-bold">NOVEDADES DE VERANO<h2>
+      
         <div class="casasVerano">
-          <p>Fantastica casa con un amplio jardin</p>
+
+          <!--aqui hemos hecho el texto de bootstrap mas grande en todas las imagenes añadiendo un fs-6,tambien tienen todas una pequeña animacion hover en la clase imagenes__casas y de retroceso transition: 0.3s ease-in-out en la clase imagenes__casas para que sea mas suave-->
+
+          <p class="fs-6">Fantastica casa con un amplio jardin</p>
           <img  class="imagenes__casas" src="./media/pexels-terry-magallanes-2635038.jpg" alt="" width="450px" height="275px">
-          <p class="loft">Con una localizacion inmejorable y parking para dos coches</p>
+          <p class="loft des__texto_casas">Con una localizacion inmejorable y parking para dos coches</p>
         </div>
         <div class="casasVerano">
-          <p>Espectacular apartamento delante del mar</p>
+          <p class="fs-6">Espectacular apartamento delante del mar</p>
           <img class="imagenes__casas" src="./media/pexels-pixabay-276724.jpg" alt="" width="450px" height="275px">
-          <p class="loft">Apartamento con dos fabulosas terrazas con vistas al mar</p>
+          <p class="loft des__texto_casas">Apartamento con dos fabulosas terrazas con vistas al mar</p>
         </div>
         <div class="casasVerano">
-          <p>Bonita casa, ideal parejas</p>
+          <p class="fs-6">Bonita casa, ideal parejas</p>
           <img class="imagenes__casas" src="./media/pexels-saviesa-home-2089698.jpg" alt="" width="450px" height="275px">
-          <p class="loft">Este recien reformado apartamento tiene todos los extras</p>
+          <p class="loft des__texto_casas ">Este recien reformado apartamento tiene todos los extras</p>
         </div>
       
       <hr>
-    </main>
-    <main>
+    
+   
       <div class="novedades">
-       <h2 class="titulos_paginas">VENTAJAS DE ALQUILAR UN LOFT</h2>
+
+        <!--aqui hemos cambiado el texto de bootstrap a negrita con un fw-bold-->
+
+       <h2 class="titulos_paginas fw-bold">VENTAJAS DE ALQUILAR UN LOFT</h2>
         <div class=" loft">
-          <div class="">
-            <div class="imagenLoft ">
-              <img class="" src="./media/loft.jpg" alt="apartamento loft" width="66%"> 
+          <div class="contenedor__ventajas__loft">
+            <div class=" ">
+              <img class="imagen__loft" src="./media/loft.jpg" alt="apartamento loft" width="100%"> 
             </div>
             <div>
-            <p class="loft posicionTextoLoft">Para empezar contamos con un solo ambiente, un loft es una vivienda amplia    consistente en espacios abiertos, sin apenas muros o puertas y con muy pocas divisiones del    espacio. El origen de vivienda se encuentra en Nueva York, en la segunda mitad del siglo XX, cuando algunas personas, especialmente artistas, decidieron aprovechar como viviendas locales abandonados por industrias en declive. Por eso, se trata de grandes naves, con altura significativa y grandes ventanales que aprovechan al maximo la luz natural.</p>
+             <p class="loft posicionTextoLoft">Para empezar contamos con un solo ambiente, un loft es una vivienda amplia    consistente en espacios abiertos, sin apenas muros o puertas y con muy pocas divisiones del    espacio. El origen de vivienda se encuentra en Nueva York, en la segunda mitad del siglo XX, cuando algunas personas, especialmente artistas, decidieron aprovechar como viviendas locales abandonados por industrias en declive. Por eso, se trata de grandes naves, con altura significativa y grandes ventanales que aprovechan al maximo la luz natural.</p>
             </div>
           </div>
         </div>
       </div>
-    </main>
+    
     <hr>
-    <diV class="novedades videoDisplay">
-      <h2 class="titulos_paginas">DESCUBRE CASAS INCREIBLES</h2>
-      <section class="loft">
-        <div class="videoDisplay">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/aVmq8ecMmBU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <p class="textoVideo loft">Estas casas son de otra dimension, tanto por su localizacion como por su diseño, las puedes encontrar en un acantilado como debajo del mar o colgando de un arbol.<br> Disfruta de la creatividad y no dudes en consultarnos, nosotros te encontramos tu casa.</p>
-        </div>
-      </section>
-
-
-
-
-    </diV> 
     
-    
+
+      <!--aqui hemos cambiado el texto de bootstrap a negrita con un fw-bold-->
+
+      <h2 class="titulos_paginas fw-bold">DESCUBRE CASAS INCREIBLES</h2>
+        <section>
+          <div class="videoDispaly">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/aVmq8ecMmBU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="textoVideo">
+            <p class="loft">Estas casas son de otra dimension, tanto por su localizacion como por su diseño, las puedes encontrar en un acantilado como debajo del mar o colgando de un arbol.<br> Disfruta de la creatividad y no dudes en consultarnos, nosotros te encontramos tu casa.</p>
+          </div>
+        </section>
+
 
     </main>
 
@@ -98,7 +121,10 @@
 
   <footer>
     <div class="bloqueMenu">
-      <h2 class="title">WELCOME<br>TO MY WORLD</h2>
+
+      <!--aqui hemos cambiado el texto de bootstrap a negrita con fw-bold-->
+
+      <h2 class="title fw-bold">WELCOME<br>TO MY WORLD</h2>
       <div class="">
         <nav>
           <ul>
@@ -116,6 +142,9 @@
       
     </div>
   </footer>
+  <!--script js_bootstrap-->
+  <script src="./java/bootstrap.bundle.min.js"></script>
+  </div>
 
 </body>
 

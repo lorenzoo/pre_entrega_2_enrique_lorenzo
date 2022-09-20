@@ -4,20 +4,28 @@
 <head>
   <meta charset="uf-8">
   <title>WELCOMETOMYWORLD</title>
+ 
   <link rel="preconnect" href="https://fonts.googleapis.com"> 
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!--enlace bootstrap-->
+
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
   
   <link rel="stylesheet" href="../css/style.css">
-
+  
 </head>
 
 <body>
-  <header>
+  <div class="container__grid">
+   <header>
     <div class="bloqueMenu">
       <div class="title">
-        <img src="../media/icons8-house-64.png" alt="logo casa">
-        <h1><a class="titulo__logo" href="../index.html">WELCOME<br>TO MY WORLD</h1></a>
+        <img class="logo__casa"  src="../media/icons8-house-64.png" alt="logo casa">
+      <!--aqui hemos cambiado el texto de bootstrap a negrita-->
+        <h1 class="fw-bold"><a class="titulo__logo" href="../index.html">WELCOME<br>TO MY WORLD</h1></a>
+      
       </div>
       <nav class="">
         <ul>
@@ -32,45 +40,81 @@
   </header>
     <div>
    
-      <main class="imagenContacto">
-       <div class="mainContactoFondo">
+      <main>
+        <h2 class="titulos_paginas concto__ti fw-bold">CONTACTANOS</h2>
+        <div class="alinear__todo__contacto">
+        <div class="imagenContacto">
+          
+         <div class="mainContactoFondo">
          <div class="novedades">
-            <h2 class="titulos_paginas">CONTACTANOS</h2>
-            <div class="bloqueContacto">
-                <form class="fondoContacto">
-                  <div>
-                    <input type="text" placeholder="Nombre">
-                  </div>
-                  <div>
-                    <input type="email" placeholder="Email" required>
-                  </div>
-                  <div>
-                    <input type="phone" placeholder="Telefono" required>
-                  </div><br>
-                  <div>
-                    <textarea name="" placeholder="Dejanos tu mensaje" cols:="30" rows:="20" required></textarea>
-                  </div><br>
-                  <div>
-                    <input type="submit" value="ENVIAR" >
-                  </div><br>
-                </form>
-                <div class="loft">
-                  <p>Oficina 47<br>Calle Igualada 23<br>08003, Barcelona<br>Tel:658778923</p>
+          <!--aqui hemos cambiado el texto de bootstrap a negrita, tambien hemos cambiado los tamaños de las celdas y el color del boton-->
+            
+            <div class="container-md">
+            <form class="row g-3">
+              <div class="col-md-6">
+                <label for="inputName" class="form-label">Nombre</label>
+                <input type="name" class="form-control" id="inputEmail4">
+              </div>
+              <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputPassword4">
+              </div>
+              <div class="col-6">
+                <label for="inputAddress" class="form-label">Direccion</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Calle, Avenida">
+              </div>
+              <div class="col-6">
+                <label for="inputAddress2" class="form-label">Direccion</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartmento, estudio, o piso">
+              </div>
+              <div class="col-md-4">
+                <label for="inputCity" class="form-label">Ciudad</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="col-md-4">
+                <label for="inputState" class="form-label">Provincia</label>
+                <select id="inputState" class="form-select">
+                  <option selected>Choose...</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <label for="inputZip" class="form-label">Codigo Postal</label>
+                <input type="text" class="form-control" id="inputZip">
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  
+                </div>
+              </div>
+              <!--a este boton le hemos modificado el color-->
+              <div class="col-12">
+                <button type="button" class="btn btn-danger">Enviar</button>
+              </div>
+            </form>
+          </div>
+                  <p class="direccion__oficina">Oficina 47<br>Calle Igualada 23<br>08003, Barcelona<br>Tel:658778923</p>
+                <br>
+                
                 </div>
             </div>
           </div>
+        
+      </div>
+              <!--le hemos añadido un mapa-->
+      <div class="mapa__contacto">
+        <h4 class="titulos_paginas concto_ti fw-bold">VEN A VISITARNOS</h4>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.7205594015463!2d2.1609027798645752!3d41.40187460316135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2bfc46b469b%3A0x1214bb2fdd1d3c06!2sC%2F%20d&#39;Igualada%2C%2023%2C%2008012%20Barcelona!5e0!3m2!1sen!2ses!4v1663655364039!5m2!1sen!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-      </main>
-    </div>  
       
-
     </main>
 
 
 
   <footer>
     <div class="bloqueMenu">
-      <h2 class="title">WELCOME<br>TO MY WORLD</h2>
+      <!--aqui hemos cambiado el texto de bootstrap a negrita-->
+      <h2 class="title fw-bold">WELCOME<br>TO MY WORLD</h2>
       <nav class="">
         <ul>
           <il class="mainTextMen footerLink"><a  href="../index.html">INICIO</a></il>
@@ -86,6 +130,9 @@
     </div>
   </footer>
 
+ <!--script js_bootstrap-->
+ <script src="../java/bootstrap.bundle.min.js"></script>
+</div>
 </body>
 
 </html>

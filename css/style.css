@@ -5,6 +5,8 @@
     
 }
 
+/* este seria nuestro grid */
+
 .grid__container {
     display: grid;
     grid-template-columns: 1;
@@ -32,31 +34,100 @@ footer {
 
 
 
-html{
+@media screen and (max-width:414px){
+
+.bloque__plantas__plantas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.imagenPlantas2{
+    padding-top: 1rem;
+}
+.contenedor__ventajas__loft{
+    display: flex;
+    flex-direction: column;
+    
+    
+    
+
+}
+
+.posicionTextoLoft{
+    
+    display: block;
+    
+    
+}
+.imagen__loft{
+    width:100%;
+    padding-left: auto;
+}
+.servicios{
+    display: flex;
+    padding-right: 0.5%;
+    padding-left: 0.5%;
+
+}
+    
+}
+
+
+.html{
     
     font-size: 16px;
 }
+ /* todo esto seria la parte del header ( logo y menu principal */
 
 .title {
     text-align: left;
     padding: 0.9rem;
+    color: rgb(185, 185, 185);
     
 
 }
 
 .titulo__logo{
+    
     text-decoration: none;
     color: black;
+    cursor: pointer;
+}
+
+/* nuestro logo con su animacion dando vueltas */
+
+.logo__casa{
+    width: 25%;
+    margin: 5%;
+    transform: rotate(360);
+    transition: 1s ease-in-out;
+
+   
+    
+    
+   
+}
+.logo__casa:hover{
+    cursor: pointer;
+    transform:rotate(360deg) ;
+    transition: 2s ease-in-out;
+   
+   
+    
+
 }
 
 .titulos_paginas{
     padding: 0.5rem;
 }
 
+/* menu con hover */
+
 .mainTextMen a{
     color: rgb(141, 3, 3);
     text-decoration: none;
-    text-align: left;
     padding: 0.5rem;
     
 }
@@ -70,8 +141,10 @@ a:hover {
 }
 
 .bloqueMenu {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
     background-color: rgb(200, 199, 199);
-    text-align: right;
     font-family: 'Poppins', sans-serif;
     padding: 0.5rem;
 
@@ -84,7 +157,7 @@ a:hover {
     padding: 1.2rem;
     
 }
-
+/* bloque de imagenes con hover y cambio de cursor */
 .casasVerano {
     display: inline-block;
     font-size: 1rem;
@@ -94,67 +167,130 @@ a:hover {
 
 .imagenes__casas{
     padding: 0.5%;
+    transition: 0.3s ease-in-out;
 
 }
 
 .imagenes__casas:hover{
     transform: scale(1.01,1.01);
     cursor: pointer;
+    
 
 }
 
+.des__texto_casas{
+    padding-top: 1rem;
+}
+
+/* tamñaos de los texto generales */
 .loft {
     font-size: 0.8rem;
     display:block
     
 }
 
-.posicionTextoLoft {
-    padding-left: 16%;
-    padding-right: 16%;
+/* parte ventajas de vivier en un loft */
+
+.contenedor__ventajas__loft{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   
 }
- 
+
+.posicionTextoLoft{
+    width: 30vw;
+    margin-left: 3%;
+    padding-left: 3rem;
+    
+}
+
+.imagen__loft{
+    width: 60vw;
+    padding-left: 6rem;
+}
+/* esta parte corresponde a la pagina de contacto */
+ /* imagen de fondo y filtro de la pagina de contacto */
 .imagenContacto {
+    display: flex;
+    justify-content: center;
     background-image:url(../media/imagen_contacto.jpg);
-    background-repeat: no-repeat; 
+    background-repeat:no-repeat; 
     background-size: 100%;
-    width: 100%;
+    width: 80%;
+    margin: 1%;
+   
     
 }
 
 .mainContactoFondo{
+    
     background-color: rgba(255, 255, 255, 0.747);
-    padding-bottom: 3%;
+    width: 100%;
+    
     
 }
 
-.fondoContacto {
-   padding: 20px;
-   padding-bottom: 30px;
-   border-radius: 5px;
-   background-color:rgb(136, 53, 53);
-   width: 200px;
-
+.concto__ti{
+    display: flex;
+    justify-content: center;
+    padding-top: 1.5rem;
+    
 }
+
+.alinear__todo__contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.mapa__contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
 
 .bloqueContacto {
     display: inline-block;
 
 }
-   
+
+/* aqui se acaba la parte de contacto */
+
+/* footer con menu */
 .footerLink {
+    margin-top: 0.2rem;
     display: block;
 
 }
 
+.title__footer{
+    padding-bottom: 2rem;
+}
+
+/* cosas nuevas despues de la primera merentrega */
+
 .videoDispaly {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+   
+   
 
 }
 
 .textoVideo {
-    padding-left: 31%;
-    padding-right: 31%;
+    padding-top: 1rem;
+    flex-wrap: nowrap;
+    width: 36rem;
+    
+   
+   
 }
 
 .servicios {
@@ -164,44 +300,37 @@ a:hover {
 }
 
 
+.bloque__comunidad{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 
-.plantas {
-    display: inline-flex;
-    margin: 5px;
-   
-
-
-   
 }
 
-.imagenPlantas1 {
-    background-color:bisque;
-    width:70vh;
-    padding: 0%;
-    position:static;
-    right: 200px;
-   
-    
-  
-}
-
-.imagenPlantas2 {
-    background-color: aquamarine;
-    width: 60vh
-    
-    
+.bloque__plantas__texto{
+    display: flex;
+    flex-direction: column;
+    margin-right:  1%;
+    align-items: center;
     
 }
 
-.textoPlantas {
+.texto__plantas {
+    margin-bottom: 3rem;
+    width: 50vw;
+    
 
-   width: 60vh;
-   height: 10vh;
-   padding: 20px;
-   position: relative;
-   left: 170px;
-   bottom:700px;
 }
+
+.bloque__plantas__plantas{
+    display: flex;
+    align-items: flex-end;
+}
+
+.texto__servicios{
+    padding-top: 1rem;
+}
+
 
 .main__contacto {
     display: flex;
@@ -218,20 +347,29 @@ a:hover {
 
     
 }
-.container__nosotros:hover {
+
+/* imgen pagina nosotros con un pequeño zoom de hover */
+.imagen__nosotros:hover {
     transform: scale(1.01,1.01);
-    box-shadow: 4% rgb(40, 40, 40);
+    transition: 0.2s;
     
 
     
 }
+
 .imagen__nosotros{
     position: relative;
     width: 100%;
     cursor: pointer;
+    transition: 0.5s ease-in-out;
+    
 }
 
-.imagen__nosotros:hover{
-    transform:scale(1.001,1.001);
-    
+
+.cabecera__equipo {
+    padding-bottom: 1rem;
+}
+
+.direccion__oficina {
+    padding-top: 1rem;
 }
