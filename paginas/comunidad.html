@@ -11,6 +11,16 @@
     <!--enlace bootstrap-->
 
   <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+  <!--enlace para hacer las animaciones-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  
+  <!--enlace para hacer las animaciones-->
+  <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
+  
+  <!-- enlace de wow animaciones-->
+  <link rel="stylesheet" href="css/animate.css">
+  
   
   <link rel="stylesheet" href="../css/style.css">
 
@@ -46,7 +56,7 @@
 
             <!--aqui hemos cambiado el texto de bootstrap a negrita con la clase fw-bold-->
 
-            <h2 class="titulos_paginas fw-bold">COMO DARLE VIDA A TU HOGAR CON PLANTAS</h2>
+            <h2 class="titulos_paginas fw-bold animate__animated animate__fadeInDown">COMO DARLE VIDA A TU HOGAR CON PLANTAS</h2>
             <div class="bloque__plantas__plantas">
               <div class="bloque__plantas__texto">
                 <div class="texto__plantas">
@@ -67,19 +77,20 @@
       <br>
       <hr>
 
-      <section class="media__loft">
+      <section class="">
         <h2 class="titulos_paginas fw-bold">VENTAJAS DE ALQUILAR UN LOFT</h2>
         
           <div class="contenedor__ventajas__loft">
             
             
               <img class="imagen__loft" src="../media/loft.jpg" alt="apartamento loft" width="100%"> 
-            </div>
+            
             <div class="posicionTextoLoft">
             
           
              <p class="loft">Para empezar contamos con un solo ambiente, un loft es una vivienda amplia    consistente en espacios abiertos, sin apenas muros o puertas y con muy pocas divisiones del    espacio. El origen de vivienda se encuentra en Nueva York, en la segunda mitad del siglo XX, cuando algunas personas, especialmente artistas, decidieron aprovechar como viviendas locales abandonados por industrias en declive. Por eso, se trata de grandes naves, con altura significativa y grandes ventanales que aprovechan al maximo la luz natural.</p>
             </div>
+          </div>
             
           </div>
         
@@ -120,9 +131,14 @@
     </div>
   </footer>
 
-  <!--script js_bootstrap-->
- <script src="../java/bootstrap.bundle.min.js"></script>
+ 
   </div>
+   <!--script js_bootstrap-->
+ <script src="../java/bootstrap.bundle.min.js"></script>
+ 
+ <!--scrip para las animaciones de wow-->
+ <script src="js/wow.min.js"></script>
+ <script> new WOW().init(); </script>
 
 </body>
 

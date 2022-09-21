@@ -146,6 +146,7 @@ a:hover {
 /* tamñaos de los texto generales */
 .loft {
     font-size: 0.8rem;
+    
    
     
 }
@@ -169,6 +170,11 @@ a:hover {
 .imagen__loft{
     width: 60vw;
     padding-left: 6rem;
+}
+
+
+.contenedor__ventajas__loft{
+    display: flex;
 }
 /* esta parte corresponde a la pagina de contacto */
  /* imagen de fondo y filtro de la pagina de contacto */
@@ -275,6 +281,9 @@ a:hover {
     align-items: center;
     
 }
+/* animation */
+
+
 
 .texto__plantas {
     margin-bottom: 3rem;
@@ -336,7 +345,7 @@ a:hover {
 }
 
 
-/* medias para dispositivos moviles de 375 x 667 */
+/* medias para dispositivos moviles de 414 x 736 */
 
 
 @media screen and (max-width:414px){
@@ -424,8 +433,9 @@ a:hover {
 
 .contenedor__ventajas__loft{
   
-   display: flex;
+   display: block;
    justify-content: center;
+   
     
    
    
