@@ -1,0 +1,691 @@
+@charset "UTF-8";
+/* map */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+/* TUTOR CORRECTOR!!! DISPCULPA QUE HAY MUCHOS COMENTARIOS, COMO VERAS HAY ALGUNAS COSAS, SOBRE TODO SOBRE LAS ANIDACIONES QUE NO LAS HE BORRADO, LAS HE DEJADO PARA RECORDAR EN UN FUTURO COMO ESTABA HECHO Y TENER ESTE EJERCICIO COMO EJEMPLO, YA SE QUE SE TIENE QUE BORRAR, MUCHAS GRACIAS :) */
+/* este seria nuestro grid */
+.grid__container {
+  display: grid;
+  grid-template-columns: 1;
+  grid-row: 3;
+  grid-template-areas: "header" "main" "footer"; }
+
+header {
+  grid-area: header; }
+
+main {
+  grid-area: main; }
+
+footer {
+  grid-area: footer; }
+
+.html {
+  font-size: 16px; }
+
+/* todo esto seria la parte del header anidado sass ( logo y menu principal ) */
+/* titulo logo anidado sass con hover */
+/* nuestro logo anidado sass con su animacion dando vueltas */
+/* !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
+.bloqueMenu {
+  /* Map requerido para la entrega numero 3 */
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  background-color: #c8c7c7;
+  font-family: 'Poppins', sans-serif;
+  padding: 0.5rem; }
+  .bloqueMenu .mainTextMen a {
+    color: #8d0303;
+    text-decoration: none;
+    padding: 0.5rem; }
+    .bloqueMenu .mainTextMen a:hover {
+      color: white; }
+  .bloqueMenu .title {
+    text-align: left;
+    padding: 0.9rem;
+    color: #b9b9b9; }
+    .bloqueMenu .title .titulo__logo {
+      text-decoration: none;
+      color: black;
+      cursor: pointer; }
+      .bloqueMenu .title .titulo__logo:hover {
+        color: white; }
+    .bloqueMenu .title .logo__casa {
+      width: 25%;
+      margin: 5%;
+      transform: rotate(360);
+      transition: 1s ease-in-out; }
+      .bloqueMenu .title .logo__casa:hover {
+        cursor: pointer;
+        transform: rotate(360deg);
+        transition: 2s ease-in-out; }
+
+/* ESTO SE PUEDE BORRAR 
+TEST ANIDACION DE LOGO Y HOVER CON ANIMACION 
+
+.titulo__logo{
+    
+    text-decoration: none;
+    color: $color-texto-primario;
+    cursor: pointer;
+    &:hover{
+        color: $color-secundario;
+    }
+} */
+/* nuestro logo con su animacion dando vueltas */
+/*logo anidado sass con hover 
+
+.logo__casa{
+    width: 25%;
+    margin: 5%;
+    transform: rotate(360);
+    transition: 1s ease-in-out;
+    &:hover{
+        cursor: pointer;
+        transform:rotate(360deg) ;
+        transition: 2s ease-in-out;
+        
+       
+       
+        
+    
+    }
+
+   
+    
+    
+   
+}
+
+/*
+.logo__casa:hover{
+    cursor: pointer;
+    transform:rotate(360deg) ;
+    transition: 2s ease-in-out;
+    
+   
+   
+    
+
+}
+*/
+/* !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
+.titulos_paginas {
+  padding: 0.5rem; }
+
+/* ESTO SE PUEDE BORRAR 
+
+a:hover {
+    color: $color-secundario;
+}
+*/
+/* !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
+.novedades {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  font-size: 1.1rem;
+  padding: 1.2rem; }
+
+/* anidacion sass bloque de imagenes con hover y cambio de cursor DE LAS IMAGENES DE CASAS */
+/* !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
+.casasVerano {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: normal;
+  padding-bottom: 3%; }
+  .casasVerano .imagenes__casas {
+    padding: 0.5%;
+    transition: 0.3s ease-in-out;
+    width: 450px; }
+    .casasVerano .imagenes__casas:hover {
+      transform: scale(1.01, 1.01);
+      cursor: pointer;
+      background: #8d0303; }
+
+/* ESTO SE PUEDE BORRAR
+
+.imagenes__casas{
+    /* test tamaño */
+/* anidacion sass de imagenes 
+    padding: 0.5%;
+    transition: 0.3s ease-in-out;
+    width: 450px;
+    &:hover{
+        transform:scale(1.01,1.01);
+        cursor: pointer;
+        background: rgb(117, 9, 9);
+   
+
+}
+
+/*
+.imagenes__casas:hover{
+    transform:scale(1.01,1.01);
+    cursor: pointer;
+    background: rgb(117, 9, 9);
+    /* test_hover color  imagenes 
+    
+}
+
+
+*/
+/* DESCRIPCION DE LOS TEXTOS DE LAS CASAS */
+/* !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
+.des__texto_casas {
+  padding-top: 1rem; }
+
+/* tamñaos de los texto generales */
+.loft {
+  font-size: 0.8rem; }
+
+/* parte ventajas de vivier en un loft */
+/* anidacion sass loft, imagene y texto */
+/* !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
+.contenedor__ventajas__loft {
+  /* TEST DE MIXIN EJERCICIO PARA LA TERCERA ENTREGA */
+  display: flex;
+  flex-direction: row;
+  /*
+    display: flex;
+    flex-direction: row;
+    */
+  align-items: center; }
+  .contenedor__ventajas__loft .imagen__loft {
+    width: 60vw;
+    padding-left: 6rem; }
+  .contenedor__ventajas__loft .posicionTextoLoft {
+    width: 30vw;
+    margin-left: 3%;
+    padding-left: 3rem; }
+
+/* ESTO SE PUEDE BORRAR
+
+.posicionTextoLoft{
+    width: 30vw;
+    margin-left: 3%;
+    padding-left: 3rem;
+    
+}
+*/
+/*
+.imagen__loft{
+    width: 60vw;
+    padding-left: 6rem;
+}
+
+
+.contenedor__ventajas__loft{
+    display: flex;
+}
+*/
+/* ESTO SE PUEDE BORRAR 
+
+esta parte corresponde a la pagina de contacto */
+/* imagen de fondo y filtro de la pagina de contacto */
+/*
+.imagenContacto {
+    display: flex;
+    justify-content: $centrado;
+    background-image:url(../media/imagen_contacto.jpg);
+    background-repeat:no-repeat; 
+    background-size: 100%;
+    width: 80%;
+    margin: 1%;
+   
+    
+} */
+/*
+.mainContactoFondo{
+    
+    background-color: rgba(252, 250, 250, 0.689);
+    width: 100%;
+    
+    
+    
+    
+}
+*/
+/* esta parte corresponde a la pagina de contacto */
+/* anidacion sass imagene contacto y fondo */
+/* !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
+.alinear__todo__contacto {
+  /* Map requerido para la entrega numero 3 */
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .alinear__todo__contacto .imagenContacto {
+    /* aqui podria añadir otro map-get para display flex */
+    display: flex;
+    justify-content: center;
+    background-image: url(../media/imagen_contacto.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 80%;
+    margin: 1%; }
+    .alinear__todo__contacto .imagenContacto .mainContactoFondo {
+      background-color: rgba(252, 250, 250, 0.689);
+      width: 100%; }
+
+/* ESTO SE PUDE BORRAR
+
+PARTE TEST ANIDADO  SASS IMAGEN CONTACTO
+
+.imagenContacto {
+    display: flex;
+    justify-content: $centrado;
+    background-image:url(../media/imagen_contacto.jpg);
+    background-repeat:no-repeat; 
+    background-size: 100%;
+    width: 80%;
+    margin: 1%;
+    .mainContactoFondo{
+    
+        background-color: rgba(252, 250, 250, 0.689);
+        width: 100%;
+        
+    }
+   
+    
+}
+
+
+.concto__ti{
+    display: flex;
+    justify-content: $centrado;
+    padding-top: 1.5rem;
+    
+    
+}
+/* ESTO SE PUDE BORRAR
+
+.alinear__todo__contacto{
+    display: flex;
+    justify-content: $centrado;
+    align-items: $centrado;
+    
+}
+*/
+/* !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
+.mapa__contacto {
+  /*
+    display: flex;
+    flex-direction: column;
+    */
+  /* TEST DE MIXIN EJERCICIO PARA LA TERCERA ENTREGA */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2rem; }
+
+/* !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
+.concto__ti {
+  display: flex;
+  justify-content: center;
+  padding-top: 1.5rem; }
+
+/* aqui se acaba la parte de contacto */
+/* footer con menu */
+/* anidado sass !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
+.footerLink {
+  margin-top: 0.2rem;
+  display: block; }
+  .footerLink .title__footer {
+    padding-bottom: 2rem; }
+
+/* ESTO SE PUEDE BORRAR
+
+.title__footer{
+    padding-bottom: 2rem;
+}
+*/
+/* cosas nuevas despues de la primera pre-entrega */
+/* anidacion sass video y texto !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
+.videoDispaly {
+  /*
+    display: flex;
+    flex-direction: column;
+    */
+  /* TEST DE MIXIN EJERCICIO PARA LA TERCERA ENTREGA */
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .videoDispaly .textoVideo {
+    padding-top: 1rem;
+    flex-wrap: nowrap;
+    width: 36rem; }
+
+/* anidacion sass comunidad !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
+.bloque__comunidad {
+  /*
+    display: flex; */
+  justify-content: center;
+  /*
+    flex-direction: column;
+    */
+  /* TEST DE MIXIN EJERCICIO PARA LA TERCERA ENTREGA */
+  display: flex;
+  flex-direction: column; }
+  .bloque__comunidad .bloque__plantas__plantas {
+    display: flex;
+    align-items: flex-end; }
+    .bloque__comunidad .bloque__plantas__plantas .bloque__plantas__texto {
+      display: flex;
+      flex-direction: column;
+      /*
+            display: flex;
+            flex-direction: column;
+            */
+      margin-right: 1%;
+      align-items: center; }
+      .bloque__comunidad .bloque__plantas__plantas .bloque__plantas__texto .texto__plantas {
+        margin-bottom: 3rem;
+        width: 50vw; }
+        .bloque__comunidad .bloque__plantas__plantas .bloque__plantas__texto .texto__plantas .loft__espacio_lineas__texto {
+          line-height: 2; }
+
+/* ESTO SE PUEDE BORRAR 
+.bloque__plantas__texto{
+    display: flex;
+    flex-direction: column;
+    margin-right:  1%;
+    align-items: $centrado;
+    
+}
+*/
+/* animation */
+/*
+.loft__espacio_lineas__texto{
+    line-height: 2;
+}
+*/
+/*
+.texto__plantas {
+    margin-bottom: 3rem;
+    width: 50vw;
+    
+
+}
+*/
+/* ESTO SE PUEDE BORRAR 
+.bloque__plantas__plantas{
+    display: flex;
+    align-items: flex-end;
+}
+*/
+/* anidacion sass contacto inclusive imagen !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
+.main__contacto {
+  /* TEST DE MIXIN EJERCICIO PARA LA TERCERA ENTREGA */
+  display: flex;
+  flex-direction: column;
+  /*
+    display: flex; */
+  justify-content: center;
+  /*
+    flex-direction: column;
+    */
+  align-items: center; }
+  .main__contacto .container__nosotros {
+    position: relative;
+    width: 36%; }
+  .main__contacto .imagen__nosotros {
+    display: block;
+    width: 100%; }
+  .main__contacto .middle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 9rem;
+    /* TEST DE MIXIN EJERCICIO PARA LA TERCERA ENTREGA */
+    display: flex;
+    flex-direction: column;
+    /*
+                display: flex;
+                flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+    line-height: 2; }
+    .main__contacto .middle:hover {
+      opacity: 1;
+      cursor: pointer;
+      transform: scale(1.01, 1.01);
+      transition: transform 0.5s; }
+    .main__contacto .middle .texto__servicios {
+      font-size: 1.2 rem;
+      margin-top: 0.20 rem; }
+  .main__contacto .middle * {
+    transform: translateY(35px);
+    transition: transform 0.5s; }
+  .main__contacto .middle:hover * {
+    transform: translateY(0); }
+  .main__contacto .direccion__oficina {
+    padding-top: 1rem; }
+
+/* ESTO SE PUEDE BORRAR 
+
+.container__nosotros{
+    position: relative;
+    width: 36%;
+     
+}
+*/
+/*
+.imagen__nosotros{
+    display: block;
+    width: 100%;
+    
+}
+*/
+/* !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
+.cabecera__equipo {
+  padding-bottom: 1rem; }
+
+/* ESTO SE PUEDE BORRAR
+
+.direccion__oficina {
+    padding-top: 1rem;
+}
+*/
+/* MEDIAS para dispositivos moviles de 414 x 736 */
+/* HAY QUE HACER Y ARREGLAR MAS @MEDIA PARA OTRAS MEDIDAS DE  PISPOSITIVOS MOVILES, EJEMPLO CUANDO SE PONDE EL MOVIL EN HORIZONTAL !!!!IMPORTANTE ARREGLAR TEXTOS E IMAGENES PARA ESTAS OTRAS @MEDIA PARA LA PROXIMA ENTREGA ( ENTREGA FINAL )
+-------------------AÑADIR MENU HAMBURGUESA !!!!!!!!!!!!!! */
+/* !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
+@media screen and (max-width: 414px) {
+  .novedades {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 0rem; }
+  .mainTextMen a {
+    color: #8d0303;
+    text-decoration: none;
+    padding: 0.1rem;
+    display: block; }
+  /* parte comunidad arreglada */
+  /* !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
+  .bloque__plantas__plantas {
+    /* TEST DE MIXIN EJERCICIO PARA LA TERCERA ENTREGA */
+    display: flex;
+    flex-direction: column;
+    /*
+        display: flex;
+        flex-direction: column; */
+    align-items: center; }
+  /* !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
+  .imagenPlantas2 {
+    padding-top: 1rem; }
+  /*
+    .texto__plantas {
+        margin-bottom: 0.1rem;
+        width: 90vw;
+        
+    
+    }
+   */
+  /* arreglar la parte de loft en comunidad */
+  /* !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
+  .media__loft {
+    /* aqui podria añadir otro map-get para el ejercicio de la entrega 3 */
+    display: flex;
+    display: block;
+    justify-content: center; }
+  /* !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
+  .loft__espacio_lineas__texto {
+    margin-bottom: 0.5rem;
+    width: 90vw;
+    padding-left: 0rem; }
+  /* anidacion sass loft imagen y texto ARREGLADO TEXTO DE LOFT*/
+  /* !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
+  .contenedor__ventajas__loft {
+    width: 412PX;
+    /* TEST DE MIXIN EJERCICIO PARA LA TERCERA ENTREGA */
+    display: flex;
+    flex-direction: column;
+    /*
+    display: flex;
+    flex-direction: column;
+    */
+    justify-content: center; }
+    .contenedor__ventajas__loft .imagen__loft {
+      width: 100%;
+      padding-left: none;
+      padding-left: 0%; }
+    .contenedor__ventajas__loft .posicionTextoLoft {
+      /* CAMBIAR TEST 
+        width: 0vw;
+        text-align: $centrado;
+        */
+      padding-top: 0.5rem;
+      width: 0vw;
+      margin-left: 0%;
+      padding-right: 20rem;
+      padding-right: 26rem; }
+  .texto__plantas {
+    padding-right: 23rem;
+    margin-bottom: 0rem;
+    width: 0vw; }
+  /* parte hoja NOSOTROS */
+  /* !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
+  .main__contacto {
+    /* TEST DE MIXIN EJERCICIO PARA LA TERCERA ENTREGA */
+    display: flex;
+    flex-direction: column;
+    /*
+    display: flex;
+    */
+    justify-content: center;
+    /*
+    flex-direction: column; 
+    */
+    align-items: center; }
+    .main__contacto .container__nosotros {
+      position: relative;
+      width: 80%; }
+    .main__contacto .imagen__nosotros {
+      display: block;
+      width: 100%; }
+    .main__contacto .middle {
+      display: none;
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      padding: 0.2rem;
+      margin-bottom: 0.5rem;
+      /* TEST DE MIXIN EJERCICIO PARA LA TERCERA ENTREGA */
+      display: flex;
+      flex-direction: column;
+      /*
+                display: flex;
+                flex-direction: column;
+                */
+      align-items: center;
+      justify-content: center;
+      opacity: 100;
+      transition: none;
+      line-height: 2; }
+      .main__contacto .middle:hover {
+        display: none;
+        opacity: none;
+        cursor: none;
+        transform: none;
+        transition: none; }
+    .main__contacto .middle * {
+      transform: none;
+      transition: none; }
+      .main__contacto .middle *:hover * {
+        transform: none; }
+  /* !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
+  .servicios {
+    color: black;
+    display: block;
+    font-size: 0.9rem; }
+  /* parte hoja de contacto */
+  /* !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
+  .imagenContacto {
+    /* aqui podria añadir otro map-get para el ejercicio de la entrega 3 */
+    display: flex;
+    justify-content: center;
+    background-image: url(../media/imagen_contacto.jpg);
+    background-repeat: no-repeat;
+    background-size: 400%;
+    width: 100%; }
+  .mainContactoFondo {
+    background-color: rgba(255, 255, 255, 0.747);
+    height: 100%; }
+  .mapa {
+    width: 95%;
+    height: 85%; }
+  /* pagina principal inicio. MAIN */
+  /* !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
+  .casasVerano {
+    width: 412px;
+    /* TEST DE MIXIN EJERCICIO PARA LA TERCERA ENTREGA */
+    display: flex;
+    flex-direction: column;
+    /*
+        display: flex;
+        flex-direction: column;
+        */
+    align-items: center;
+    font-weight: normal; }
+  /* arreglado */
+  .imagenes__casas {
+    justify-content: center;
+    /* aqui podria añadir otro map-get para el ejercicio de la entrega 3 */
+    display: flex;
+    width: 412px;
+    height: auto; }
+  .des__texto_casas {
+    padding: 2px;
+    margin: 20px; }
+  /* textos generales todas paginas */
+  /* !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
+  .loft {
+    /* aqui hemos añadido un map-get que requeira el ejercicio para la entrega 3 */
+    flex-direction: column; }
+  /* guardar elementos a la vista para dispositivos moviles de menos de 415px */
+  .video__movil {
+    display: none;
+    width: auto; }
+  /* arreglado */
+  .textoVideo {
+    display: none; }
+  .pagina__movil__index {
+    display: none; }
+  .videoDispaly {
+    display: none; }
+  .video__dispplay__movil {
+    display: none; }
+  hr {
+    display: none; } }

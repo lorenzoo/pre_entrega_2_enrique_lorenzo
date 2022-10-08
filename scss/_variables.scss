@@ -1,0 +1,25 @@
+$color-primario-header: rgb(200, 199, 199);
+$color-secundario: white;
+$color-texto-primario: black;
+
+$pading-texto-minimo: 0.5rem;
+$pading-texto-medio: 1rem;
+
+$color-enlaces-menu: rgb(141, 3, 3);
+$color-enlaces-hover: white;
+
+$centrado: center;
+$ninguno: none;
+$bloque: block;
+
+/* map */
+
+$flexible:(
+    flex: flex,
+    row: row,
+    column: column,
+);
+
+$flexible-flex: flex;
+$flexible-row:row;
+$flexible-column: column;

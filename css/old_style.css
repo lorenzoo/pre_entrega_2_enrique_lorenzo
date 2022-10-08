@@ -17,6 +17,7 @@
      "footer";
 }
 
+
 header {
     
     grid-area: header;
@@ -118,6 +119,7 @@ a:hover {
     padding: 1.2rem;
     
 }
+
 /* bloque de imagenes con hover y cambio de cursor */
 .casasVerano {
     display: inline-block;
@@ -127,17 +129,32 @@ a:hover {
 }
 
 .imagenes__casas{
+    /* test tamaño */
     padding: 0.5%;
     transition: 0.3s ease-in-out;
+    width: 450px;
+   
+   
+
 
 }
 
+
 .imagenes__casas:hover{
-    transform: scale(1.01,1.01);
+    transform:scale(1.01,1.01);
     cursor: pointer;
+    background: rgb(117, 9, 9);
+    /* test_hover color  imagenes */
+    
+   
+    
+    
+   
     
 
 }
+
+
 
 .des__texto_casas{
     padding-top: 1rem;
@@ -178,6 +195,7 @@ a:hover {
 }
 /* esta parte corresponde a la pagina de contacto */
  /* imagen de fondo y filtro de la pagina de contacto */
+
 .imagenContacto {
     display: flex;
     justify-content: center;
@@ -238,7 +256,7 @@ a:hover {
     padding-bottom: 2rem;
 }
 
-/* cosas nuevas despues de la primera merentrega */
+/* cosas nuevas despues de la primera pre-entrega */
 
 .videoDispaly {
     display: flex;
@@ -254,16 +272,10 @@ a:hover {
 .textoVideo {
     padding-top: 1rem;
     flex-wrap: nowrap;
-    width: 36rem;
+    width: 36rem; 
     
    
    
-}
-
-.servicios {
-   
-     padding-right: 30%;
-     padding-left: 30%;
 }
 
 
@@ -281,9 +293,12 @@ a:hover {
     align-items: center;
     
 }
+
 /* animation */
 
-
+.loft__espacio_lineas__texto{
+    line-height: 2;
+}
 
 .texto__plantas {
     margin-bottom: 3rem;
@@ -297,10 +312,6 @@ a:hover {
     align-items: flex-end;
 }
 
-.texto__servicios{
-    padding-top: 1rem;
-}
-
 
 .main__contacto {
     display: flex;
@@ -309,31 +320,84 @@ a:hover {
     align-items: center;
     
 }
+
+
+/* test hover imagen nosotros empieza aqui */
+/* toda esta parte se tiene que hacer responsive */
 .container__nosotros{
-    width: 40%;
-    display: flex;
-    display: block;
-   
-
-    
-}
-
-/* imgen pagina nosotros con un pequeño zoom de hover */
-.imagen__nosotros:hover {
-    transform: scale(1.01,1.01);
-    transition: 0.2s;
-    
-
+    position: relative;
+    width: 36%;
     
 }
 
 .imagen__nosotros{
-    position: relative;
+    display: block;
     width: 100%;
-    cursor: pointer;
-    transition: 0.5s ease-in-out;
     
 }
+
+.middle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0,0.6);
+    color: white;
+    padding: 9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+    line-height: 2;
+
+
+
+   
+}
+
+.middle  * {
+    
+    transform: translateY(35px);
+    transition: transform 0.5s;
+    
+    
+}
+
+.middle:hover{
+    opacity: 1;
+    cursor: pointer;
+    transform: scale(1.01,1.01);
+    transition: transform 0.5s;
+    
+}
+
+.middle:hover  * {
+    transform: translateY(0);
+   
+    
+
+
+
+}
+
+.texto__servicios{
+    font-size: 1.2 rem;
+    margin-top: 0.20 rem;
+     
+
+
+}
+
+
+
+
+
+/* aqui acaba el test de nosotros y esta parte hay que hacerla responsive */
+
+
 
 
 .cabecera__equipo {
