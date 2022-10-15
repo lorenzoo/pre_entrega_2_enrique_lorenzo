@@ -88,6 +88,9 @@ footer {
     }
     
 }
+.direccion__footer{
+    text-align: center;
+}
 }
 
 /* ESTO SE PUEDE BORRAR 
@@ -141,8 +144,12 @@ TEST ANIDACION DE LOGO Y HOVER CON ANIMACION
 }
 */
 
-/* !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
 
+.direccion__footer{
+    color: rgb(156, 155, 155);
+}
+
+/* !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
 .titulos_paginas{
     padding: $pading-texto-minimo;
 }
@@ -175,7 +182,7 @@ a:hover {
     padding-bottom: 3%;
     .imagenes__casas{
         padding: 0.5%;
-        transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out; 
         width: 450px;
         &:hover{
             transform:scale(1.01,1.01);
@@ -610,6 +617,31 @@ PARTE TEST ANIDADO  SASS IMAGEN CONTACTO
     padding-bottom: $pading-texto-medio;
 }
 
+.descripcion_propiedad{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding-bottom: 3%;
+}
+
+.distribucuion__propiedades{
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding-left: 2rem;
+}
+
+/* bloque carrousel
+.tamaño__carrousel{
+    width: 10%;
+}
+*/
+
 /* ESTO SE PUEDE BORRAR
 
 .direccion__oficina {
@@ -617,13 +649,15 @@ PARTE TEST ANIDADO  SASS IMAGEN CONTACTO
 }
 */
 
-/* MEDIAS para dispositivos moviles de 414 x 736 */
+/* MEDIAS para dispositivos moviles de 415 x 736 */
 
 /* HAY QUE HACER Y ARREGLAR MAS @MEDIA PARA OTRAS MEDIDAS DE  PISPOSITIVOS MOVILES, EJEMPLO CUANDO SE PONDE EL MOVIL EN HORIZONTAL !!!!IMPORTANTE ARREGLAR TEXTOS E IMAGENES PARA ESTAS OTRAS @MEDIA PARA LA PROXIMA ENTREGA ( ENTREGA FINAL )
 -------------------AÑADIR MENU HAMBURGUESA !!!!!!!!!!!!!! */
  /* !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
 
-@media screen and (max-width:414px){
+@media screen and (max-width:415px){
+
+    
 
     .novedades {
         font-family: 'Poppins', sans-serif;
@@ -852,7 +886,7 @@ PARTE TEST ANIDADO  SASS IMAGEN CONTACTO
 
 .casasVerano {
         
-        width: 412px;
+        width: 100vw;
         /* TEST DE MIXIN EJERCICIO PARA LA TERCERA ENTREGA */
         @include flex-colum;
         /*
@@ -871,7 +905,8 @@ PARTE TEST ANIDADO  SASS IMAGEN CONTACTO
        justify-content: center;
        /* aqui podria añadir otro map-get para el ejercicio de la entrega 3 */
        display: flex;
-       width: 412px;
+       padding: 0%;
+       width: 412px; /*!important; */
        height: auto;
     
     }
@@ -881,7 +916,12 @@ PARTE TEST ANIDADO  SASS IMAGEN CONTACTO
         padding: 2px;
         margin: 20px;
        
-    }
+    } 
+    /* tamaños imagenes carrousel */
+    .d-block{
+        height: 35vh;
+        width: 100vw;
+    } 
     
    
     /* textos generales todas paginas */
@@ -893,27 +933,27 @@ PARTE TEST ANIDADO  SASS IMAGEN CONTACTO
     }
 
 /* guardar elementos a la vista para dispositivos moviles de menos de 415px */
-
+/* PARTE DEL VIDEO YOUTUBE */
 .video__movil{
     display: $ninguno;
-    width: auto;
+   
 }
 
 /* arreglado */
 .textoVideo{
     
     display: $ninguno;
-}
+}  /*  parte del blog main page */
     .pagina__movil__index{
        
         display: $ninguno;
         
         
 
-    }
+    } 
     
     .videoDispaly{
-        display: $ninguno;
+        display: $centrado;
        
     
     
@@ -924,6 +964,33 @@ PARTE TEST ANIDADO  SASS IMAGEN CONTACTO
 
     hr{
         display: $ninguno;
+    }
+    /* cambiar d-block para otras @medias slides de galerias */
+    
+    
+    .titulo__media_movil{
+        text-align: $centrado;
+    }
+    /* CAMBIANDO EL MENU Y EL FOOTER */
+    .bloqueMenu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        .title{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            .direccion__footer{
+                text-align: center;
+            }
+            
+        }
+       
+        
+
     }
     
 }

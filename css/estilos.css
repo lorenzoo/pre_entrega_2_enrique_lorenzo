@@ -62,6 +62,8 @@ footer {
         cursor: pointer;
         transform: rotate(360deg);
         transition: 2s ease-in-out; }
+  .bloqueMenu .direccion__footer {
+    text-align: center; }
 
 /* ESTO SE PUEDE BORRAR 
 TEST ANIDACION DE LOGO Y HOVER CON ANIMACION 
@@ -112,6 +114,9 @@ TEST ANIDACION DE LOGO Y HOVER CON ANIMACION
 
 }
 */
+.direccion__footer {
+  color: #9c9b9b; }
+
 /* !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
 .titulos_paginas {
   padding: 0.5rem; }
@@ -488,17 +493,39 @@ PARTE TEST ANIDADO  SASS IMAGEN CONTACTO
 .cabecera__equipo {
   padding-bottom: 1rem; }
 
+.descripcion_propiedad {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  padding-left: 3%;
+  padding-right: 3%;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding-bottom: 3%; }
+
+.distribucuion__propiedades {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 2rem; }
+
+/* bloque carrousel
+.tamaño__carrousel{
+    width: 10%;
+}
+*/
 /* ESTO SE PUEDE BORRAR
 
 .direccion__oficina {
     padding-top: 1rem;
 }
 */
-/* MEDIAS para dispositivos moviles de 414 x 736 */
+/* MEDIAS para dispositivos moviles de 415 x 736 */
 /* HAY QUE HACER Y ARREGLAR MAS @MEDIA PARA OTRAS MEDIDAS DE  PISPOSITIVOS MOVILES, EJEMPLO CUANDO SE PONDE EL MOVIL EN HORIZONTAL !!!!IMPORTANTE ARREGLAR TEXTOS E IMAGENES PARA ESTAS OTRAS @MEDIA PARA LA PROXIMA ENTREGA ( ENTREGA FINAL )
 -------------------AÑADIR MENU HAMBURGUESA !!!!!!!!!!!!!! */
 /* !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 415px) {
   .novedades {
     font-family: 'Poppins', sans-serif;
     text-align: center;
@@ -649,7 +676,7 @@ PARTE TEST ANIDADO  SASS IMAGEN CONTACTO
   /* pagina principal inicio. MAIN */
   /* !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
   .casasVerano {
-    width: 412px;
+    width: 100vw;
     /* TEST DE MIXIN EJERCICIO PARA LA TERCERA ENTREGA */
     display: flex;
     flex-direction: column;
@@ -664,28 +691,52 @@ PARTE TEST ANIDADO  SASS IMAGEN CONTACTO
     justify-content: center;
     /* aqui podria añadir otro map-get para el ejercicio de la entrega 3 */
     display: flex;
+    padding: 0%;
     width: 412px;
+    /*!important; */
     height: auto; }
   .des__texto_casas {
     padding: 2px;
     margin: 20px; }
+  /* tamaños imagenes carrousel */
+  .d-block {
+    height: 35vh;
+    width: 100vw; }
   /* textos generales todas paginas */
   /* !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
   .loft {
     /* aqui hemos añadido un map-get que requeira el ejercicio para la entrega 3 */
     flex-direction: column; }
   /* guardar elementos a la vista para dispositivos moviles de menos de 415px */
+  /* PARTE DEL VIDEO YOUTUBE */
   .video__movil {
-    display: none;
-    width: auto; }
+    display: none; }
   /* arreglado */
   .textoVideo {
     display: none; }
+  /*  parte del blog main page */
   .pagina__movil__index {
     display: none; }
   .videoDispaly {
-    display: none; }
+    display: center; }
   .video__dispplay__movil {
     display: none; }
   hr {
-    display: none; } }
+    display: none; }
+  /* cambiar d-block para otras @medias slides de galerias */
+  .titulo__media_movil {
+    text-align: center; }
+  /* CAMBIANDO EL MENU Y EL FOOTER */
+  .bloqueMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; }
+    .bloqueMenu .title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center; }
+      .bloqueMenu .title .direccion__footer {
+        text-align: center; } }
