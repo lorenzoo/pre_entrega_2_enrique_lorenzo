@@ -1,0 +1,21 @@
+La idea de este proyecto es la presentacion de una web para una compañia inmobiliaria. Lo que vendria a ser un pequeño briefing para que el cliente luego decida como quiere customizarla, añadiendo o quitando cosas, etc.
+La web se llama WELCOME TO MY WORLD.
+Disponemos de una pagina principal (index )y otras 4 paginas iniciales que se ven en el menu (INICIO, EXPLORA,COMUNIDAD,NOSOTROS Y CONTACTO).
+En la pagina index y resto de paginas que componen la web vemos un logo que tiene una animación, este loGo ( casa ) no redirige al index, sino que lo hace el texto que es parte de este logo ( este logo-texto tiene una transicion cambiando de color y tambien es un enlace a la pagina index. principal) El menu principal de todas las paginas incluyendo el index y otras, forman parte del header, este menu esta creado de enlaces con transiciones cambiando de color y dirigiendo cada enlace a su pagina correspondiente.
+Todas las imagenes de las casas tienen transiciones, cambiando de tamaño y añadiendo una linea outline a ellas, estas imagenes tambien son elaces a otras paginas para ver el detalle de cada una ( un total de otras 9 paginas )
+La pagina EXPLORA seria como quien dice la galeria de propiedades disponibles, como comentaba antes estas tienen transiciones y enlaces a otras paginas. Se muestran alineadas de 3 en 3 un total de 3 lineas con 3 imagenes en cada una de ellas, un total de 9 imagenes.
+La pagina COMUNIDAD es un blog en el que se van añadiendo semanalmente o mensualmente ideas, trucos, sugerencias sobre cualquier cosa relacionada con casas, apartamentos y demas life style.
+La pagina NOSOTROS es informacion de los servicios y el equipo que disponemos ( las tarjetas para crear el grupo de equipo estan customizadas de BOOTSTRAP ), la imagen del body ( la casa de madera ) en NOSOTROS tiene una transicion en la que se añade un filtro a la imagen y un texto sobre los serviicos.
+La pagina de CONTACTO tiene un formulario de contacto, este esta hecho con BOOTSTRAP y un mapa de donde se encuentra el negocio.
+Debajo de cada pagina tenemos el footer, este es igual para todas y cada una de las paginas, en este vemos principlamente el logo asi como difuminado solo por cuestiones esteticas, no tiene ninguna otra función. En la parte central tenemos enlaces a redes sociales con transiciones, estos enlace redirigen a paginas externas, y en la esquina derecha tenemos otro menu dispuesto de forma vertical con enlaces a cada pagina y estos tambien tienen transiciones de color.
+Una vez nos encontramos en las pagians de las casas vemos un carrousel, este esta customizado de BOOTSTRAP.
+Hemos añadido a cada pagina también un mapa de donde se encuentra la propiedad.
+Todos los enlaces o imagenes que tengan algun tipo de función tienen un pointer view asi para que cambie el cursor de forma de flecha a forma de mano.
+Cada una de las paginas sobre las casas tienen tambien un enlace que redirige a CONTACTOS para pedir más información.
+
+Para el scss la parte de las @media tenia un problema, el navegador de chrome por si solo me da un error, no me las lee, pero si lo abro con safari en modo crhome-windows por ejemplo, se ve perfecto, tambien lo he comprobado con una pagina web ( https://bluetree.ai/ ) para salir de dudas ya que hice todo con safari al estar utilizando un MAC.
+La @media para dispisitivos moviles estan adaptadas para iphone de 415px / 736px , para tablets de 768px / 1024px. Para las medidas entre 415 y 768 para algunos de los textos les he dado un scroll, a otros los he centrado y reducido el tamaño, asi como las imagenes que las hemos puesto para que se vean de forma vertical, como por ejemplo la pagina de EXPLORA en la que se puede ver la galeria de imagenes de esta forma.
+Para las @media hemos cambiado el menu principal/ navegador de una apariencia horizontal a un menu de forma vertical centrado junto al logo tambien tomando la parte principal de arriba de las paginas. Hemos hecho lo mismo con el menu del footer, lo hemos centrado y dispuesto de forma vertical, se ve limpio, tambien lo mismo con los iconos de redes sociales y los textos.
+
+Problemas que me he encontrado...un sin fin! ya que es la primera vez que hago algo así y que entre el trabajo y esto casi no disponia de tiempo para dedicarle.
+Espero que sea de su agrado este ejercicio.

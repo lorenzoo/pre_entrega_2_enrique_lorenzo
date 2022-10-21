@@ -34,8 +34,8 @@
 
 <body>
   <div class="grid__container">
-  <header>
-    <div class="bloqueMenu">
+    <header>
+      <div class="bloqueMenu">
         <div class="title">
 
           <!--en la clase logo__casa le doy la animacion al icono de la casa,esta animacion se la he dado en todas las paginas-->
@@ -56,8 +56,8 @@
             
           </ul>
         </nav>
-    </div>
-  </header>
+      </div>
+    </header>
     
     <main>
       <div class="novedades">
@@ -65,7 +65,7 @@
       <!--aqui hemos cambiado el texto de bootstrap a negrita con un fw-bold-->
 
 
-      <h2 class="titulos_paginas fw-bold animate__animated animate__fadeInDown">NOVEDADES DE VERANO<h2>
+      <h2 class="titulos_paginas fw-bold animate__animated animate__fadeInDown">NOVEDADES DE VERANO</h2>
     
         <div class="casasVerano">
 
@@ -80,7 +80,7 @@
         
 
         <div class="casasVerano">
-          <p class="fs-6">Espectacular apartamento delante del mar</p>
+          <p class="fs-6">Espectacular apartamento delante del mar</p> <!-- aqui hacemos una prueba de d-block responsive-->
           <a href="./paginas/casa_2.html"><img class="imagenes__casas" src="./media/pexels-pixabay-276724.jpg" alt="salon con sofas de una casa" width="450px" height="275px"></a>
           <p class="loft des__texto_casas">Apartamento con dos fabulosas terrazas con vistas al mar</p>
         </div>
@@ -115,29 +115,24 @@
         </div>
       </div>
     
-    <hr>
-    <div class="video__dispplay__movil">
+     <hr>
+      <div class="video__dispplay__movil">
     
    
-      <!--aqui hemos cambiado el texto de bootstrap a negrita con un fw-bold-->
+         <!--aqui hemos cambiado el texto de bootstrap a negrita con un fw-bold-->
     
-      <h2 class="titulos_paginas fw-bold">DESCUBRE CASAS INCREIBLES</h2>
-    
-    </div>
+        <h2 class="titulos_paginas fw-bold">DESCUBRE CASAS INCREIBLES</h2>
+      </div>
         <section>
           <div class="video__movil">
-          <div class="videoDispaly">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/aVmq8ecMmBU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <div class="textoVideo">
-            <p class="loft loft__espacio_lineas__texto">Estas casas son de otra dimension, tanto por su localizacion como por su diseño, las puedes encontrar en un acantilado como debajo del mar o colgando de un arbol.<br> Disfruta de la creatividad y no dudes en consultarnos, nosotros te encontramos tu casa.</p>
-          </div>
+            <div class="videoDispaly">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/aVmq8ecMmBU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             <div class="textoVideo">
+              <p class="loft loft__espacio_lineas__texto">Estas casas son de otra   dimension, tanto por su localizacion como por su diseño, las puedes encontrar en un acantilado como debajo del mar o colgando de un arbol.<br> Disfruta de la creatividad y no dudes en consultarnos, nosotros te encontramos tu casa.</p>
+            </div>
           </div>
         </section>
-      </div>
-    </div>
-  
-
-
+        </div>
     </main>
 
 
@@ -152,17 +147,26 @@
 
   
 
-  <footer>
+   <footer>
     <div class="bloqueMenu">
+      <div class="footer__agrupado">
 
       <!--aqui hemos cambiado el texto de bootstrap a negrita con fw-bold-->
-
       <h2 class="title fw-bold">WELCOME<br>TO MY WORLD</h2>
-      <p class="direccion__footer">Calle Igualada 23,
+      <div>
+        <div class="bloque__social__media">
+            <nav class="redes__sociales">
+               <a class="social__media" href="https://www.facebook.com" target="_blank"><img src="./media/social_facebook_fb_35.png" alt="logo facebook" width="35px"></a>
+               <a class="social__media" href="https://www.instagram.com" target="_blank"><img src="./media/instagram_logo_icon_186929.png" alt="logo instagram" width="35px"></a>
+               <a class="social__media" href="https://www.linkedin.com" target="_blank"><img src="./media/linkedin_black_logo_icon_147114.png" alt="logo linkedink" width="35px"></a>
+            </nav>
+          </div>
+        <p class="direccion__footer">Calle Igualada 23,
         08003, Barcelona
         Tel:658778923</p>
-      <div class="">
-        <nav>
+       </div>
+      
+        <nav class="">
           <ul>
               <il class="mainTextMen footerLink"><a  href="#">INICIO</a></il>
               <il class="mainTextMen footerLink"><a  href="./paginas/explora.html">EXPLORA</a></il>
@@ -173,11 +177,11 @@
   
 
         </nav>
-      <div>
-    </div>
+      
+     
       
     </div>
-  </footer>
+   </footer>
   
   
   </div>

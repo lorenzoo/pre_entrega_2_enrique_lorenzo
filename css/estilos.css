@@ -65,55 +65,6 @@ footer {
   .bloqueMenu .direccion__footer {
     text-align: center; }
 
-/* ESTO SE PUEDE BORRAR 
-TEST ANIDACION DE LOGO Y HOVER CON ANIMACION 
-
-.titulo__logo{
-    
-    text-decoration: none;
-    color: $color-texto-primario;
-    cursor: pointer;
-    &:hover{
-        color: $color-secundario;
-    }
-} */
-/* nuestro logo con su animacion dando vueltas */
-/*logo anidado sass con hover 
-
-.logo__casa{
-    width: 25%;
-    margin: 5%;
-    transform: rotate(360);
-    transition: 1s ease-in-out;
-    &:hover{
-        cursor: pointer;
-        transform:rotate(360deg) ;
-        transition: 2s ease-in-out;
-        
-       
-       
-        
-    
-    }
-
-   
-    
-    
-   
-}
-
-/*
-.logo__casa:hover{
-    cursor: pointer;
-    transform:rotate(360deg) ;
-    transition: 2s ease-in-out;
-    
-   
-   
-    
-
-}
-*/
 .direccion__footer {
   color: #9c9b9b; }
 
@@ -150,41 +101,15 @@ a:hover {
       cursor: pointer;
       background: #8d0303; }
 
-/* ESTO SE PUEDE BORRAR
-
-.imagenes__casas{
-    /* test tamaño */
-/* anidacion sass de imagenes 
-    padding: 0.5%;
-    transition: 0.3s ease-in-out;
-    width: 450px;
-    &:hover{
-        transform:scale(1.01,1.01);
-        cursor: pointer;
-        background: rgb(117, 9, 9);
-   
-
-}
-
-/*
-.imagenes__casas:hover{
-    transform:scale(1.01,1.01);
-    cursor: pointer;
-    background: rgb(117, 9, 9);
-    /* test_hover color  imagenes 
-    
-}
-
-
-*/
 /* DESCRIPCION DE LOS TEXTOS DE LAS CASAS */
 /* !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
-.des__texto_casas {
-  padding-top: 1rem; }
-
 /* tamñaos de los texto generales */
 .loft {
-  font-size: 0.8rem; }
+  font-size: 0.85rem; }
+
+.des__texto_casas {
+  padding-top: 1rem;
+  font-size: 0.9rem; }
 
 /* parte ventajas de vivier en un loft */
 /* anidacion sass loft, imagene y texto */
@@ -204,55 +129,9 @@ a:hover {
   .contenedor__ventajas__loft .posicionTextoLoft {
     width: 30vw;
     margin-left: 3%;
-    padding-left: 3rem; }
-
-/* ESTO SE PUEDE BORRAR
-
-.posicionTextoLoft{
-    width: 30vw;
-    margin-left: 3%;
     padding-left: 3rem;
-    
-}
-*/
-/*
-.imagen__loft{
-    width: 60vw;
-    padding-left: 6rem;
-}
+    line-height: 2rem; }
 
-
-.contenedor__ventajas__loft{
-    display: flex;
-}
-*/
-/* ESTO SE PUEDE BORRAR 
-
-esta parte corresponde a la pagina de contacto */
-/* imagen de fondo y filtro de la pagina de contacto */
-/*
-.imagenContacto {
-    display: flex;
-    justify-content: $centrado;
-    background-image:url(../media/imagen_contacto.jpg);
-    background-repeat:no-repeat; 
-    background-size: 100%;
-    width: 80%;
-    margin: 1%;
-   
-    
-} */
-/*
-.mainContactoFondo{
-    
-    background-color: rgba(252, 250, 250, 0.689);
-    width: 100%;
-    
-    
-    
-    
-}
-*/
 /* esta parte corresponde a la pagina de contacto */
 /* anidacion sass imagene contacto y fondo */
 /* !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
@@ -274,45 +153,6 @@ esta parte corresponde a la pagina de contacto */
       background-color: rgba(252, 250, 250, 0.689);
       width: 100%; }
 
-/* ESTO SE PUDE BORRAR
-
-PARTE TEST ANIDADO  SASS IMAGEN CONTACTO
-
-.imagenContacto {
-    display: flex;
-    justify-content: $centrado;
-    background-image:url(../media/imagen_contacto.jpg);
-    background-repeat:no-repeat; 
-    background-size: 100%;
-    width: 80%;
-    margin: 1%;
-    .mainContactoFondo{
-    
-        background-color: rgba(252, 250, 250, 0.689);
-        width: 100%;
-        
-    }
-   
-    
-}
-
-
-.concto__ti{
-    display: flex;
-    justify-content: $centrado;
-    padding-top: 1.5rem;
-    
-    
-}
-/* ESTO SE PUDE BORRAR
-
-.alinear__todo__contacto{
-    display: flex;
-    justify-content: $centrado;
-    align-items: $centrado;
-    
-}
-*/
 /* !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
 .mapa__contacto {
   /*
@@ -340,6 +180,35 @@ PARTE TEST ANIDADO  SASS IMAGEN CONTACTO
   .footerLink .title__footer {
     padding-bottom: 2rem; }
 
+.footer__agrupado {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100vw; }
+
+/* FOOTER REDES SOCIALES */
+.bloque__social__media {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.redes__sociales {
+  display: flex;
+  justify-content: space-evenly; }
+  .redes__sociales .social__media {
+    cursor: pointer;
+    width: 8px;
+    padding-bottom: 4%;
+    opacity: 22%;
+    transform: rotate(0deg);
+    transition: 0.5s ease-in-out; }
+    .redes__sociales .social__media:hover {
+      cursor: pointer;
+      transform: rotate(10deg);
+      transition: 0.1s ease-in-out;
+      opacity: 100%; }
+
 /* ESTO SE PUEDE BORRAR
 
 .title__footer{
@@ -358,9 +227,10 @@ PARTE TEST ANIDADO  SASS IMAGEN CONTACTO
   flex-direction: column;
   align-items: center; }
   .videoDispaly .textoVideo {
-    padding-top: 1rem;
+    padding-top: 2rem;
     flex-wrap: nowrap;
-    width: 36rem; }
+    width: 36rem;
+    line-height: 1.6rem; }
 
 /* anidacion sass comunidad !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
 .bloque__comunidad {
@@ -389,48 +259,14 @@ PARTE TEST ANIDADO  SASS IMAGEN CONTACTO
         margin-bottom: 3rem;
         width: 50vw; }
         .bloque__comunidad .bloque__plantas__plantas .bloque__plantas__texto .texto__plantas .loft__espacio_lineas__texto {
-          line-height: 2; }
+          line-height: 2rem; }
 
-/* ESTO SE PUEDE BORRAR 
-.bloque__plantas__texto{
-    display: flex;
-    flex-direction: column;
-    margin-right:  1%;
-    align-items: $centrado;
-    
-}
-*/
-/* animation */
-/*
-.loft__espacio_lineas__texto{
-    line-height: 2;
-}
-*/
-/*
-.texto__plantas {
-    margin-bottom: 3rem;
-    width: 50vw;
-    
-
-}
-*/
-/* ESTO SE PUEDE BORRAR 
-.bloque__plantas__plantas{
-    display: flex;
-    align-items: flex-end;
-}
-*/
 /* anidacion sass contacto inclusive imagen !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
 .main__contacto {
   /* TEST DE MIXIN EJERCICIO PARA LA TERCERA ENTREGA */
   display: flex;
   flex-direction: column;
-  /*
-    display: flex; */
   justify-content: center;
-  /*
-    flex-direction: column;
-    */
   align-items: center; }
   .main__contacto .container__nosotros {
     position: relative;
@@ -474,21 +310,6 @@ PARTE TEST ANIDADO  SASS IMAGEN CONTACTO
   .main__contacto .direccion__oficina {
     padding-top: 1rem; }
 
-/* ESTO SE PUEDE BORRAR 
-
-.container__nosotros{
-    position: relative;
-    width: 36%;
-     
-}
-*/
-/*
-.imagen__nosotros{
-    display: block;
-    width: 100%;
-    
-}
-*/
 /* !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
 .cabecera__equipo {
   padding-bottom: 1rem; }
@@ -521,97 +342,104 @@ PARTE TEST ANIDADO  SASS IMAGEN CONTACTO
     padding-top: 1rem;
 }
 */
-/* MEDIAS para dispositivos moviles de 415 x 736 */
 /* HAY QUE HACER Y ARREGLAR MAS @MEDIA PARA OTRAS MEDIDAS DE  PISPOSITIVOS MOVILES, EJEMPLO CUANDO SE PONDE EL MOVIL EN HORIZONTAL !!!!IMPORTANTE ARREGLAR TEXTOS E IMAGENES PARA ESTAS OTRAS @MEDIA PARA LA PROXIMA ENTREGA ( ENTREGA FINAL )
 -------------------AÑADIR MENU HAMBURGUESA !!!!!!!!!!!!!! */
 /* !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
-@media screen and (max-width: 415px) {
-  .novedades {
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-    font-size: 1.1rem;
-    padding: 0rem; }
-  .mainTextMen a {
-    color: #8d0303;
-    text-decoration: none;
-    padding: 0.1rem;
-    display: block; }
-  /* parte comunidad arreglada */
-  /* !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
-  .bloque__plantas__plantas {
-    /* TEST DE MIXIN EJERCICIO PARA LA TERCERA ENTREGA */
-    display: flex;
-    flex-direction: column;
-    /*
-        display: flex;
-        flex-direction: column; */
-    align-items: center; }
-  /* !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
-  .imagenPlantas2 {
-    padding-top: 1rem; }
-  /*
-    .texto__plantas {
-        margin-bottom: 0.1rem;
-        width: 90vw;
-        
-    
-    }
-   */
-  /* arreglar la parte de loft en comunidad */
-  /* !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
-  .media__loft {
-    /* aqui podria añadir otro map-get para el ejercicio de la entrega 3 */
-    display: flex;
-    display: block;
-    justify-content: center; }
-  /* !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
-  .loft__espacio_lineas__texto {
-    margin-bottom: 0.5rem;
-    width: 90vw;
-    padding-left: 0rem; }
-  /* anidacion sass loft imagen y texto ARREGLADO TEXTO DE LOFT*/
-  /* !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
-  .contenedor__ventajas__loft {
-    width: 412PX;
-    /* TEST DE MIXIN EJERCICIO PARA LA TERCERA ENTREGA */
-    display: flex;
-    flex-direction: column;
-    /*
-    display: flex;
-    flex-direction: column;
-    */
-    justify-content: center; }
-    .contenedor__ventajas__loft .imagen__loft {
-      width: 100%;
-      padding-left: none;
-      padding-left: 0%; }
-    .contenedor__ventajas__loft .posicionTextoLoft {
-      /* CAMBIAR TEST 
-        width: 0vw;
-        text-align: $centrado;
-        */
-      padding-top: 0.5rem;
-      width: 0vw;
-      margin-left: 0%;
-      padding-right: 20rem;
-      padding-right: 26rem; }
-  .texto__plantas {
-    padding-right: 23rem;
-    margin-bottom: 0rem;
-    width: 0vw; }
-  /* parte hoja NOSOTROS */
-  /* !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
+/* MEDIA PARA DISPOSITIVOS MOVILES TABLETS DE 768 X 1024  en Horizontal*/
+@media screen and (max-width: 1024px) {
   .main__contacto {
     /* TEST DE MIXIN EJERCICIO PARA LA TERCERA ENTREGA */
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .main__contacto .container__nosotros {
+      position: relative;
+      width: 36%; }
+    .main__contacto .imagen__nosotros {
+      display: block;
+      width: 100%; }
+    .main__contacto .middle {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 4rem;
+      /* TEST DE MIXIN EJERCICIO PARA LA TERCERA ENTREGA */
+      display: flex;
+      flex-direction: column;
+      /*
+                display: flex;
+                flex-direction: column; */
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.25s;
+      line-height: 2; }
+      .main__contacto .middle:hover {
+        opacity: 1;
+        cursor: pointer;
+        transform: scale(1.01, 1.01);
+        transition: transform 0.5s; }
+      .main__contacto .middle .texto__servicios {
+        font-size: 0.5rem;
+        overflow: scroll; }
+    .main__contacto .middle * {
+      transform: translateY(35px);
+      transition: transform 0.5s; }
+    .main__contacto .middle:hover * {
+      transform: translateY(0); }
+    .main__contacto .direccion__oficina {
+      padding-top: 1rem; }
+  .d-block {
+    height: 82vh;
+    width: 100vw; }
+  .bloque__comunidad {
     /*
-    display: flex;
-    */
+    display: flex; */
     justify-content: center;
     /*
-    flex-direction: column; 
+    flex-direction: column;
     */
+    /* TEST DE MIXIN EJERCICIO PARA LA TERCERA ENTREGA */
+    display: flex;
+    flex-direction: column; }
+    .bloque__comunidad .bloque__plantas__plantas {
+      display: flex;
+      align-items: flex-end; }
+      .bloque__comunidad .bloque__plantas__plantas .bloque__plantas__texto {
+        display: flex;
+        flex-direction: column;
+        margin-right: 1%;
+        align-items: center; }
+        .bloque__comunidad .bloque__plantas__plantas .bloque__plantas__texto .texto__plantas {
+          margin-bottom: 0.5rem;
+          width: 50vw;
+          max-height: 190px;
+          overflow: scroll; }
+          .bloque__comunidad .bloque__plantas__plantas .bloque__plantas__texto .texto__plantas .loft__espacio_lineas__texto {
+            line-height: 2rem; }
+  .loft__espacio_lineas__texto {
+    margin-bottom: 0.5rem;
+    padding-right: 3rem;
+    overflow: scroll;
+    max-height: 330px; } }
+
+/* MEDIAS MOBILES PARA TABLETS DE  768PX EN VERTICAL */
+@media screen and (max-width: 768px) {
+  .novedades {
+    padding-top: 1.2rem;
+    padding-left: 0;
+    padding-bottom: 1.2rem;
+    padding-right: 0; }
+  .main__contacto {
+    /* TEST DE MIXIN EJERCICIO PARA LA TERCERA ENTREGA  */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center; }
     .main__contacto .container__nosotros {
       position: relative;
@@ -632,44 +460,301 @@ PARTE TEST ANIDADO  SASS IMAGEN CONTACTO
       /* TEST DE MIXIN EJERCICIO PARA LA TERCERA ENTREGA */
       display: flex;
       flex-direction: column;
-      /*
-                display: flex;
-                flex-direction: column;
-                */
       align-items: center;
       justify-content: center;
       opacity: 100;
-      transition: none;
       line-height: 2; }
       .main__contacto .middle:hover {
         display: none;
         opacity: none;
         cursor: none;
-        transform: none;
-        transition: none; }
+        transform: scale 0;
+        transition: transform none; }
     .main__contacto .middle * {
-      transform: none;
-      transition: none; }
+      transform: translate none;
+      translate: opacity 0; }
       .main__contacto .middle *:hover * {
-        transform: none; }
+        transform: translate none;
+        transition: none;
+        translate: opacity 0; }
+    .main__contacto .servicios {
+      color: black;
+      display: block;
+      font-size: larger;
+      padding-bottom: 2rem; }
+  .alinear__todo__contacto {
+    /* Map requerido para la entrega numero 3 */
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .alinear__todo__contacto .imagenContacto {
+      /* aqui podria añadir otro map-get para display flex */
+      display: flex;
+      justify-content: center;
+      background-image: url(../media/imagen_contacto.jpg);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      width: 100%;
+      margin: 1%; }
+      .alinear__todo__contacto .imagenContacto .mainContactoFondo {
+        background-color: rgba(252, 250, 250, 0.689);
+        width: 100%; }
+  .bloqueMenu {
+    /* Map requerido para la entrega numero 3 */
+    display: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    background-color: #c8c7c7;
+    font-family: 'Poppins', sans-serif;
+    padding: 0.5rem; }
+    .bloqueMenu .mainTextMen a {
+      font-size: small;
+      color: #8d0303;
+      text-decoration: none;
+      padding: 0.5rem; }
+      .bloqueMenu .mainTextMen a:hover {
+        color: white; }
+    .bloqueMenu .title {
+      text-align: left;
+      padding: 0.9rem;
+      color: #b9b9b9; }
+      .bloqueMenu .title .titulo__logo {
+        text-decoration: none;
+        color: black;
+        cursor: pointer; }
+        .bloqueMenu .title .titulo__logo:hover {
+          color: white; }
+      .bloqueMenu .title .logo__casa {
+        width: 25%;
+        margin: 5%;
+        transform: rotate(360);
+        transition: 1s ease-in-out; }
+        .bloqueMenu .title .logo__casa:hover {
+          cursor: pointer;
+          transform: rotate(360deg);
+          transition: 2s ease-in-out; }
+    .bloqueMenu .direccion__footer {
+      text-align: center; }
+  .posicionTextoLoft {
+    width: 40vw;
+    height: 28vh;
+    margin-right: 4%;
+    padding-left: 2rem;
+    line-height: 0.2rem;
+    overflow: scroll; }
+  .d-block {
+    height: 47vh;
+    width: 100vw; }
+  .bloque__comunidad {
+    /*
+        display: flex; */
+    justify-content: center;
+    /*
+        flex-direction: column;
+        */
+    /* TEST DE MIXIN EJERCICIO PARA LA TERCERA ENTREGA */
+    display: flex;
+    flex-direction: column; }
+    .bloque__comunidad .bloque__plantas__plantas {
+      display: block;
+      align-items: flex-end; }
+      .bloque__comunidad .bloque__plantas__plantas .bloque__plantas__texto {
+        display: flex;
+        flex-direction: column;
+        /*
+                display: flex;
+                flex-direction: column;
+                */
+        margin-right: 1%;
+        align-items: center; }
+        .bloque__comunidad .bloque__plantas__plantas .bloque__plantas__texto .texto__plantas {
+          margin-bottom: 1.5rem;
+          width: 100vw;
+          max-height: 245px;
+          overflow: hidden;
+          padding-left: 3.5rem; }
+          .bloque__comunidad .bloque__plantas__plantas .bloque__plantas__texto .texto__plantas .loft__espacio_lineas__texto {
+            line-height: 2rem; }
+  .imagenPlantas2 {
+    display: flex;
+    align-items: center;
+    padding-top: 2%;
+    width: 100vw;
+    height: 20%;
+    margin-right: 0; } }
+
+/* media movil TELEFONO MOVIL CON pantalla de 415px x 736px */
+@media screen and (max-width: 415px) {
+  .novedades {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 0rem; }
+  .bloqueMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; }
+    .bloqueMenu .title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center; }
+      .bloqueMenu .title .direccion__footer {
+        text-align: center; }
+    .bloqueMenu .mainTextMen a {
+      font-size: large;
+      color: #8d0303;
+      text-decoration: none;
+      padding: 0.1rem;
+      padding-right: 1rem;
+      display: block; }
+  .footer__agrupado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw; }
+  .bloque__comunidad {
+    /*
+        display: flex; */
+    justify-content: center;
+    /*
+        flex-direction: column;
+        */
+    /* TEST DE MIXIN EJERCICIO PARA LA TERCERA ENTREGA */
+    display: flex;
+    flex-direction: column; }
+    .bloque__comunidad .bloque__plantas__plantas {
+      display: block;
+      align-items: flex-end; }
+      .bloque__comunidad .bloque__plantas__plantas .bloque__plantas__texto {
+        display: flex;
+        flex-direction: column;
+        /*
+                display: flex;
+                flex-direction: column;
+                */
+        margin-right: 1%;
+        align-items: center; }
+        .bloque__comunidad .bloque__plantas__plantas .bloque__plantas__texto .texto__plantas {
+          margin-bottom: 1.5rem;
+          width: 100vw;
+          max-height: 320px;
+          overflow: hidden;
+          padding-left: 3rem; }
+          .bloque__comunidad .bloque__plantas__plantas .bloque__plantas__texto .texto__plantas .loft__espacio_lineas__texto {
+            line-height: 2rem; }
+  /* parte comunidad arreglada 
+
+    /* !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
+  .imagenPlantas2 {
+    padding-top: 0.5rem;
+    width: 100vw; }
+  /* !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
+  .media__loft {
+    /* aqui podria añadir otro map-get para el ejercicio de la entrega 3 */
+    display: flex;
+    display: block;
+    justify-content: center; }
+  /* !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
+  .loft__espacio_lineas__texto {
+    margin-bottom: 0.5rem;
+    width: 91vw;
+    padding-left: 0.5rem; }
+  /* anidacion sass loft imagen y texto ARREGLADO TEXTO DE LOFT*/
+  /* !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
+  .contenedor__ventajas__loft {
+    width: 100vw;
+    /* TEST DE MIXIN EJERCICIO PARA LA TERCERA ENTREGA */
+    display: flex;
+    flex-direction: column;
+    /*
+    display: flex;
+    flex-direction: column;
+    */
+    justify-content: center; }
+    .contenedor__ventajas__loft .imagen__loft {
+      width: 100%;
+      padding-left: none;
+      padding-left: 0%; }
+    .contenedor__ventajas__loft .posicionTextoLoft {
+      /* CAMBIAR TEST 
+        width: 0vw;
+        text-align: $centrado;
+        */
+      padding-top: 0.5rem;
+      width: 0vw;
+      margin-right: 2.2rem;
+      padding-right: 23rem; }
+  /* parte hoja NOSOTROS */
+  /* !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
+  .main__contacto {
+    /* TEST DE MIXIN EJERCICIO PARA LA TERCERA ENTREGA */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .main__contacto .container__nosotros {
+      position: relative;
+      width: 80%; }
+    .main__contacto .imagen__nosotros {
+      display: block;
+      width: 100%; }
+    .main__contacto .middle {
+      display: none;
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      padding: 0.2rem;
+      margin-bottom: 0.5rem;
+      /* TEST DE MIXIN EJERCICIO PARA LA TERCERA ENTREGA */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 100;
+      line-height: 2; }
+      .main__contacto .middle:hover {
+        display: none;
+        opacity: none;
+        cursor: none;
+        transform: scale 0;
+        transition: transform none; }
+    .main__contacto .middle * {
+      transform: translate none;
+      translate: opacity 0; }
+      .main__contacto .middle *:hover * {
+        transform: translate none;
+        transition: none; }
   /* !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
   .servicios {
     color: black;
     display: block;
-    font-size: 0.9rem; }
+    font-size: large; }
   /* parte hoja de contacto */
   /* !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
-  .imagenContacto {
-    /* aqui podria añadir otro map-get para el ejercicio de la entrega 3 */
+  .alinear__todo__contacto {
+    /* Map requerido para la entrega numero 3 */
     display: flex;
     justify-content: center;
-    background-image: url(../media/imagen_contacto.jpg);
-    background-repeat: no-repeat;
-    background-size: 400%;
-    width: 100%; }
-  .mainContactoFondo {
-    background-color: rgba(255, 255, 255, 0.747);
-    height: 100%; }
+    align-items: center; }
+    .alinear__todo__contacto .imagenContacto {
+      /* aqui podria añadir otro map-get para display flex */
+      display: flex;
+      justify-content: center;
+      background-image: url(../media/imagen_contacto.jpg);
+      background-repeat: no-repeat;
+      background-size: 360%;
+      width: 80%;
+      margin: 1%; }
+      .alinear__todo__contacto .imagenContacto .mainContactoFondo {
+        background-color: rgba(252, 250, 250, 0.689);
+        width: 100%; }
   .mapa {
     width: 95%;
     height: 85%; }
@@ -691,9 +776,10 @@ PARTE TEST ANIDADO  SASS IMAGEN CONTACTO
     justify-content: center;
     /* aqui podria añadir otro map-get para el ejercicio de la entrega 3 */
     display: flex;
+    flex-wrap: wrap;
     padding: 0%;
-    width: 412px;
-    /*!important; */
+    /* test important como nos comento la profesora , mala praxis no se debe de hacer ESTO ES UN TEST!!!!! */
+    width: 412px !important;
     height: auto; }
   .des__texto_casas {
     padding: 2px;
@@ -726,17 +812,4 @@ PARTE TEST ANIDADO  SASS IMAGEN CONTACTO
   /* cambiar d-block para otras @medias slides de galerias */
   .titulo__media_movil {
     text-align: center; }
-  /* CAMBIANDO EL MENU Y EL FOOTER */
-  .bloqueMenu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center; }
-    .bloqueMenu .title {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center; }
-      .bloqueMenu .title .direccion__footer {
-        text-align: center; } }
+  /* CAMBIANDO EL MENU Y EL FOOTER */ }
