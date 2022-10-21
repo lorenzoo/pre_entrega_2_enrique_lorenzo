@@ -65,46 +65,90 @@
           <!--aqui hemos cambiado el texto de bootstrap a negrita, tambien hemos cambiado los tamaños de las celdas y el color del boton-->
             
             <div class="container-md">
+              <!--
             <form class="row g-3">
               <div class="col-md-6">
-                <label for="inputName" class="form-label">Nombre</label>
-                <input type="name" class="form-control" id="inputEmail4">
+                <label for="validationDefault01" class="form-label">Nombre</label>
+                <input type="name" class="form-control" id="validationDefault01" required="">
               </div>
               <div class="col-md-6">
-                <label for="inputEmail4" class="form-label">Email</label>
-                <input type="email" class="form-control" id="inputPassword4">
+                <label for="validationDefault02" class="form-label">Email</label>
+                <input type="email" class="form-control" id="validationDefault02" required="">
               </div>
               <div class="col-6">
-                <label for="inputAddress" class="form-label">Direccion</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Calle, Avenida">
+                <label for="validationDefault03" class="form-label">Direccion</label>
+                <input type="text" class="form-control" id="validationDefault013" placeholder="1234 Calle, Avenida" required="">
               </div>
               <div class="col-6">
-                <label for="inputAddress2" class="form-label">Direccion</label>
-                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartmento, estudio, o piso">
+                <label for="validationDefault04" class="form-label">Direccion</label>
+                <input type="text" class="form-control" id="validationDefault04" placeholder="Apartmento, estudio, o piso" required="">
               </div>
               <div class="col-md-4">
-                <label for="inputCity" class="form-label">Ciudad</label>
-                <input type="text" class="form-control" id="inputCity">
+                <label for="validationDefault05" class="form-label">City</label>
+                <input type="text" class="form-control" id="validationDefault05" required="">
               </div>
               <div class="col-md-4">
                 <label for="inputState" class="form-label">Provincia</label>
-                <select id="inputState" class="form-select">
+                <select id="inputState" class="form-select" required="">
                   <option selected>Choose...</option>
-                  <option>...</option>
+                  <option>Barcelona</option>
+                  <option>Gerona</option>
+                  <option>Lleida</option>
+                  <option>Tarragona</option>
                 </select>
               </div>
               <div class="col-md-4">
-                <label for="inputZip" class="form-label">Codigo Postal</label>
-                <input type="text" class="form-control" id="inputZip">
+                <label for="validationDefault06" class="form-label">Codigo Postal</label>
+                <input type="text" class="form-control" id="validationDefault06" required="">
               </div>
               <div class="col-12">
                 <div class="form-check">
                   
                 </div>
               </div>
-              <!--a este boton le hemos modificado el color-->
+            a este boton le hemos modificado el color
               <div class="col-12">
                 <button type="button" class="btn btn-danger">Enviar</button>
+              </div>
+            </form> -->
+            <form class="row g-3">
+              <div class="col-md-6">
+                <label for="validationDefault01" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="validationDefault01" value="" required="">
+              </div>
+              <div class="col-md-6">
+                <label for="validationDefault02" class="form-label">Email</label>
+                <input type="text" class="form-control" id="validationDefault02" value="" required="">
+              </div>
+              <div class="col-md-6">
+                <label for="validationDefault03" class="form-label">Ciudad</label>
+                <input type="text" class="form-control" id="validationDefault03" required="">
+              </div>
+              <div class="col-md-3">
+                <label for="validationDefault04" class="form-label">Provincia</label>
+                <select class="form-select" id="validationDefault04" required="">
+                  <option selected="" disabled="" value="">Elige...</option>
+                  <option>...</option>
+                  <option>Barcelona</option>
+                  <option>Gerona</option>
+                  <option>Lleida</option>
+                  <option>Tarragona</option>
+                </select>
+              </div>
+              <div class="col-md-3">
+                <label for="validationDefault05" class="form-label">Codigo postal</label>
+                <input type="text" class="form-control" id="validationDefault05" required="">
+              </div>
+              <div class="col-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required="">
+                  <label class="form-check-label" for="invalidCheck2">
+                    Estoy de acuerdo con terminos y condiciones
+                  </label>
+                </div>
+              </div>
+              <div class="col-12">
+                <button class="btn btn-danger" type="submit">ENVIAR</button>
               </div>
             </form>
           </div>
@@ -117,6 +161,8 @@
           </div>
         
       </div>
+      <!--TEST FORMULARIO-->
+      
               <!--le hemos añadido un mapa-->
       <div class="mapa__contacto">
         <h4 class="titulos_paginas concto_ti fw-bold">VEN A VISITARNOS</h4>
@@ -131,9 +177,19 @@
     <div class="bloqueMenu">
       <!--aqui hemos cambiado el texto de bootstrap a negrita-->
       <h2 class="title fw-bold">WELCOME<br>TO MY WORLD</h2>
-      <p class="direccion__footer">Calle Igualada 23,
+      <div>
+        <div class="bloque__social__media">
+            <nav class="redes__sociales">
+               <a class="social__media" href="https://www.facebook.com" target="_blank"><img src="../media/social_facebook_fb_35.png" alt="logo facebook" width="35px"></a>
+               <a class="social__media" href="https://www.instagram.com" target="_blank"><img src="../media/instagram_logo_icon_186929.png" alt="logo instagram" width="35px"></a>
+               <a class="social__media" href="https://www.linkedin.com" target="_blank"><img src="../media/linkedin_black_logo_icon_147114.png" alt="logo linkedink" width="35px"></a>
+            </nav>
+          </div>
+        <p class="direccion__footer">Calle Igualada 23,
         08003, Barcelona
         Tel:658778923</p>
+      </div>
+      
       <nav class="">
         <ul>
           <il class="mainTextMen footerLink"><a  href="../index.html">INICIO</a></il>
