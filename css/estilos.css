@@ -209,9 +209,6 @@ a:hover {
       transition: 0.1s ease-in-out;
       opacity: 100%; }
 
-.footer {
-  bottom: 0; }
-
 /* ESTO SE PUEDE BORRAR
 
 .title__footer{
@@ -334,17 +331,9 @@ a:hover {
   justify-content: center;
   padding-left: 2rem; }
 
-/* bloque carrousel
-.tamaño__carrousel{
-    width: 10%;
-}
-*/
-/* ESTO SE PUEDE BORRAR
+footer {
+  bottom: 0; }
 
-.direccion__oficina {
-    padding-top: 1rem;
-}
-*/
 /* HAY QUE HACER Y ARREGLAR MAS @MEDIA PARA OTRAS MEDIDAS DE  PISPOSITIVOS MOVILES, EJEMPLO CUANDO SE PONDE EL MOVIL EN HORIZONTAL !!!!IMPORTANTE ARREGLAR TEXTOS E IMAGENES PARA ESTAS OTRAS @MEDIA PARA LA PROXIMA ENTREGA ( ENTREGA FINAL )
 -------------------AÑADIR MENU HAMBURGUESA !!!!!!!!!!!!!! */
 /* !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
