@@ -209,6 +209,9 @@ a:hover {
       transition: 0.1s ease-in-out;
       opacity: 100%; }
 
+.footer {
+  bottom: 0; }
+
 /* ESTO SE PUEDE BORRAR
 
 .title__footer{
