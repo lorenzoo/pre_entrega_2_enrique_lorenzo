@@ -62,10 +62,9 @@ footer {
         cursor: pointer;
         transform: rotate(360deg);
         transition: 2s ease-in-out; }
-  .bloqueMenu .direccion__footer {
-    text-align: center; }
 
 .direccion__footer {
+  text-align: center;
   color: #9c9b9b; }
 
 /* !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
@@ -209,12 +208,6 @@ a:hover {
       transition: 0.1s ease-in-out;
       opacity: 100%; }
 
-/* ESTO SE PUEDE BORRAR
-
-.title__footer{
-    padding-bottom: 2rem;
-}
-*/
 /* cosas nuevas despues de la primera pre-entrega */
 /* anidacion sass video y texto !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
 .videoDispaly {
@@ -417,7 +410,7 @@ a:hover {
     overflow: scroll;
     max-height: 330px; } }
 
-/* MEDIAS MOBILES PARA TABLETS DE  768PX EN VERTICAL */
+/* MEDIAS MOBILES PARA TABLETS DE  768px / 1024px EN VERTICAL */
 @media screen and (max-width: 768px) {
   .novedades {
     padding-top: 1.2rem;
@@ -522,8 +515,6 @@ a:hover {
           cursor: pointer;
           transform: rotate(360deg);
           transition: 2s ease-in-out; }
-    .bloqueMenu .direccion__footer {
-      text-align: center; }
   .posicionTextoLoft {
     width: 40vw;
     height: 28vh;
@@ -570,7 +561,9 @@ a:hover {
     padding-top: 2%;
     width: 100vw;
     height: 20%;
-    margin-right: 0; } }
+    margin-right: 0; }
+  .direccion__footer {
+    text-align: center; } }
 
 /* media movil TELEFONO MOVIL CON pantalla de 415px x 736px */
 @media screen and (max-width: 415px) {
@@ -579,8 +572,9 @@ a:hover {
     text-align: center;
     font-size: 1.1rem;
     padding: 0rem; }
+  /* hacer comprovaciones */
   .bloqueMenu {
-    display: flex;
+    display: block;
     flex-direction: column;
     align-items: center;
     text-align: center; }

@@ -1,0 +1,398 @@
+@media screen and (max-width:414px){
+    .novedades {
+        font-family: 'Poppins', sans-serif;
+        text-align: $centrado;
+        font-size: 1.1rem;
+        padding: 0rem;
+        
+    }
+    
+ /* hacer comprovaciones */
+ 
+ 
+    /* Map requerido para la entrega numero 3 */
+     /*.bloqueMenu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        .title{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            .direccion__footer{
+                text-align: center;
+            }
+            
+        }
+        .mainTextMen a{
+          
+            font-size:large; 
+            color: rgb(141, 3, 3);
+            text-decoration: $ninguno;
+            padding: 0.1rem;
+            padding-right: 1rem;
+            display:$bloque;
+           
+            
+        }
+        
+
+    } */   
+        
+    .title {
+    text-align: left;
+    padding: 0.9rem;
+    color: rgb(185, 185, 185);
+    .titulo__logo{
+        text-decoration: $ninguno;
+        color: $color-texto-primario;
+        cursor: pointer;
+        &:hover{
+            color:$color-enlaces-hover;
+        }
+    }.logo__casa{
+        width: 25%;
+        margin: 5%;
+        transform: rotate(360);
+        transition: 1s ease-in-out;
+        &:hover{
+            cursor: pointer;
+            transform:rotate(360deg) ;
+            transition: 2s ease-in-out;
+        }
+    }
+    
+ }
+
+
+    
+    
+
+    .footer__agrupado{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 100vw;
+       
+    
+    }
+    .bloque__comunidad{
+        /*
+        display: flex; */
+        justify-content: $centrado;
+        /*
+        flex-direction: column;
+        */
+        /* TEST DE MIXIN EJERCICIO PARA LA TERCERA ENTREGA */
+        @include flex-colum;
+        .bloque__plantas__plantas{
+            display: block;
+            align-items: flex-end;
+            .bloque__plantas__texto{
+                @include flex-colum;
+                /*
+                display: flex;
+                flex-direction: column;
+                */
+                margin-right:  1%;
+                align-items: $centrado;
+                .texto__plantas {
+                    margin-bottom: 1.5rem;
+                    width: 100vw;
+                    max-height: 320px;
+                    overflow: hidden;
+                    padding-left: 3rem;
+                    
+                    
+                   
+                    .loft__espacio_lineas__texto{
+                        line-height: 2rem;
+                    }
+                    
+                
+                }
+                
+            }
+        }
+        
+    
+    }
+    /* parte comunidad arreglada 
+
+    /* !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
+
+    .imagenPlantas2{
+        padding-top: $pading-texto-minimo;
+        width: 100vw;
+    }
+
+ /* !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
+
+ .media__loft{
+    /* aqui podria añadir otro map-get para el ejercicio de la entrega 3 */
+    display: flex;
+    display: $bloque;
+    justify-content: $centrado;
+    
+    
+   
+ }
+
+ /* !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
+
+ .loft__espacio_lineas__texto{
+    margin-bottom: $pading-texto-minimo;
+    width: 91vw;
+    padding-left:0.5rem ;
+   
+
+ }
+
+
+ /* anidacion sass loft imagen y texto ARREGLADO TEXTO DE LOFT*/
+ /* !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
+
+ .contenedor__ventajas__loft{
+    width:100vw;
+       
+    /* TEST DE MIXIN EJERCICIO PARA LA TERCERA ENTREGA */
+    @include flex-colum;
+    /*
+    display: flex;
+    flex-direction: column;
+    */
+    justify-content: $centrado;
+    .imagen__loft{
+       
+        width: 100%;
+        padding-left: $ninguno;
+        padding-left: 0%;
+    }
+    .posicionTextoLoft{
+        /* CAMBIAR TEST 
+        width: 0vw;
+        text-align: $centrado;
+        */ 
+        padding-top: 0.5rem;
+        width: 0vw;
+        margin-right: 2.2rem;
+        padding-right: 23rem;
+       
+       
+        
+    }
+    
+   
+ } 
+
+ /* parte hoja NOSOTROS */
+ /* !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
+
+ .main__contacto {
+    /* TEST DE MIXIN EJERCICIO PARA LA TERCERA ENTREGA */
+    @include flex-colum;
+    justify-content:  $centrado;
+    align-items: $centrado;
+        .container__nosotros{
+           position: relative;
+           width: 80%;
+         
+    }
+       .imagen__nosotros{
+           display: $bloque;
+           width: 100%;
+        
+       }
+           .middle{
+                display: $ninguno;
+                position: relative;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: $color-secundario;
+                padding: 0.2rem;
+                margin-bottom: $pading-texto-minimo;
+                /* TEST DE MIXIN EJERCICIO PARA LA TERCERA ENTREGA */
+                @include flex-colum;
+                align-items: $centrado;
+                justify-content: $centrado;
+                opacity: 100;
+                line-height: 2;
+                &:hover{
+                    display: $ninguno;
+                    opacity: $ninguno;
+                    cursor: $ninguno;
+                    transform: scale 0;
+                    transition: transform ($ninguno);
+                    
+                    
+                }
+                
+           }
+          
+           .middle  * {
+            transform: translate ($ninguno);
+            translate: opacity (0);
+            
+            &:hover  * {
+                transform: translate ($ninguno);
+                transition: $ninguno;
+               
+                
+            
+            }
+        
+               
+        }
+            
+            
+ }
+ /* !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
+
+ .servicios{
+    color: $color-texto-primario;
+    display: $bloque;
+    font-size: large;
+   
+   
+     
+
+
+ }
+
+ /* parte hoja de contacto */
+ /* !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
+ .alinear__todo__contacto{
+    /* Map requerido para la entrega numero 3 */
+   display: map-get($flexible , flex );
+   justify-content: $centrado;
+   align-items: $centrado;
+      .imagenContacto {
+       /* aqui podria añadir otro map-get para display flex */
+          display: flex;
+          justify-content: $centrado;
+          background-image:url(../media/imagen_contacto.jpg);
+          background-repeat:no-repeat; 
+          background-size: 360%;
+          width: 80%;
+          margin: 1%;
+          .mainContactoFondo{
+             background-color: rgba(252, 250, 250, 0.689);
+             width: 100%;
+           
+       }
+      
+       
+   }
+   
+ }
+
+ .mapa{
+        width: 95%;
+        height: 85%;
+        
+    }
+    
+    /* pagina principal inicio. MAIN */
+    /* !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
+
+ .casasVerano {
+        
+        width: 100vw;
+        /* TEST DE MIXIN EJERCICIO PARA LA TERCERA ENTREGA */
+        @include flex-colum;
+        /*
+        display: flex;
+        flex-direction: column;
+        */
+        align-items: $centrado; 
+        font-weight: normal;
+        
+       
+       
+        
+    }
+    /* arreglado */
+    .imagenes__casas{
+       justify-content: center;
+       /* aqui podria añadir otro map-get para el ejercicio de la entrega 3 */
+       display: flex;
+       flex-wrap: wrap;
+       padding: 0%;
+       /* test important como nos comento la profesora , mala praxis no se debe de hacer ESTO ES UN TEST!!!!! */
+       width: 412px !important;
+       height: auto;
+    
+    }
+
+    .des__texto_casas{
+        
+        padding: 2px;
+        margin: 20px;
+       
+    } 
+    /* tamaños imagenes carrousel */
+    .d-block{
+        height: 35vh;
+        width: 100vw;
+    } 
+    
+   
+    /* textos generales todas paginas */
+    /* !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
+
+    .loft{
+        /* aqui hemos añadido un map-get que requeira el ejercicio para la entrega 3 */
+        flex-direction: map-get($flexible , column );
+    }
+
+  /* guardar elementos a la vista para dispositivos moviles de menos de 415px */
+  /* PARTE DEL VIDEO YOUTUBE */
+  .video__movil{
+    display: $ninguno;
+   
+   }
+
+   /* arreglado */
+   .textoVideo{
+    
+    display: $ninguno;
+    }  /*  parte del blog main page */
+    .pagina__movil__index{
+       
+        display: $ninguno;
+        
+        
+
+    } 
+    
+    .videoDispaly{
+        display: $centrado;
+       
+    
+    
+    }
+    .video__dispplay__movil{
+        display: $ninguno;
+    }
+
+    hr{
+        display: $ninguno;
+    }
+    /* cambiar d-block para otras @medias slides de galerias */
+    
+    
+    .titulo__media_movil{
+        text-align: $centrado;
+    }
+    /* CAMBIANDO EL MENU Y EL FOOTER */
+    
+ 
+}
+
+    

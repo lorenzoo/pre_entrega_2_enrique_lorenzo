@@ -87,14 +87,13 @@ footer {
         }
     }
     
+ }
+
 }
+
+
 .direccion__footer{
     text-align: center;
-}
-}
-
-
-.direccion__footer{
     color: rgb(156, 155, 155);
 }
 
@@ -297,12 +296,6 @@ a:hover {
     }
 }
 
-/* ESTO SE PUEDE BORRAR
-
-.title__footer{
-    padding-bottom: 2rem;
-}
-*/
 
 /* cosas nuevas despues de la primera pre-entrega */
 /* anidacion sass video y texto !!!! AQUI HEMOS AÑADIDO YA VARIABLES PARA ESTA NUEVA ENTRAGA NUMERO 3 !!!!! */
@@ -744,9 +737,7 @@ padding-left: 2rem;
         }
         
     }
-    .direccion__footer{
-        text-align: center;
-    }
+    
     }
     .posicionTextoLoft{
         
@@ -814,7 +805,9 @@ padding-left: 2rem;
         margin-right: 0;
     }
     
-
+.direccion__footer{
+        text-align: center;
+    }
    
 
 }
@@ -835,9 +828,9 @@ padding-left: 2rem;
         padding: 0rem;
         
     }
-
+/* hacer comprovaciones */
     .bloqueMenu{
-        display: flex;
+        display:block;
         flex-direction: column;
         align-items: center;
         text-align: center;
